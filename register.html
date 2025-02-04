@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en, fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Register Ecoride</title>
+</head>
+
+<body>
+
+    
+
+
+        <header>
+
+            <button class="btn_menu">
+                <img src="icons/icon_menu.png" class="icon_menu" alt="icon_menu">
+            </button>
+
+            <img src="images/logo_ecoride.png" class="logo_ecoride" alt="logo_ecoride">
+
+            <nav>
+                <a href="home" class="ahome">
+                    <img src="icons/icon_arrow_back.png" class="arrow_back" alt="">
+                    Home</a>
+                <a href="creer_uncompte" class="aregister">Créer un compte</a>
+                <a href="login" class="alogin">Login</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <form class="formulaire">
+                <div class="card">
+                    <div class="rod">
+                        <label for="firstname"></label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Your firstname" required>
+                    </div>
+                    <div class="rod">
+                        <label for="lastname"></label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Your lastname" required>
+                    </div>
+                    <div class="rod">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" pattern=".+@example\.com"
+                            required>
+                    </div>
+                    <div class="rod">
+                        <label for="password"></label>
+                        <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Create password"
+                            minlength="8" required>
+                    </div>
+                    
+
+            
+                </div>
+                <div class="rod_support">
+                   
+                    <button type="button" onclick="registerUser()" class="search">S'inscrire</button>
+                    
+                </div>
+                <div class="mdp_oublie">Mot de pass oublié</div>
+            </form>
+            <p class="form_paraph">Vous avez déjà un compte? <a href="login.html" class="formlink">Se connecter</a></p>
+            <div class="card_info">
+                <h3 class="rod_infoplus">MAJ crédits</h3>
+                <h3 class="rod_infoplus">MAJ places</h3>
+            </div>
+        </main>
+
+        <footer>
+            <a>ecoride@gmail.com</a>
+            <a>Mentions légales</a>
+            <a>Avis</a>
+        </footer>
+
+        <script src="register.js"></script>
+    </body>
+
+</html>
