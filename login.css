@@ -214,7 +214,8 @@ nav{
     border-radius: 100px;
     background: #ff3e3e;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     color: black;
     cursor: pointer;
 }
