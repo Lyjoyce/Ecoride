@@ -122,11 +122,15 @@ input{
     width: 130px;
     height: 20px;
     padding: 2px;
-    border: solid 2px #260401;
+    border: solid 2px #639e3f;
     border-radius: 70px;
-    padding: 5px;
+    background-color: #260401;
+    padding: 10px;
     margin: 20px;
 }
+.mdp_oublie :hover{
+    text-decoration: underline;
+ }
 .form_paraph{
     margin-left: 20px;
 }
