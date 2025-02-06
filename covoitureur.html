@@ -43,62 +43,56 @@
                         <div class="halfrod_info" id="credits"></div>
                     </div>
                 </div>
+
                 <div class="rod">
-                    <label for="pseudo"></label>
-                    <input type="text" id="pseudo" name="pseudo">
+                    <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo">
                 </div>
                 <div class="rod">
-                    <label for="note"></label>
                     <input type="number" id="note" name="note" min="0" max="5" placeholder="note">
                 </div>
                     <div class="half-rod">
-                        <label for="price"></label>
                         <input type="number" id="price" name="price" min="3" max="10" placeholder="price">
                     </div>
                     <div class="half-rod">
-                        <label for="statut"></label>
-                        <input type="text" id="statut" name="statut">
+                        <input type="text" id="statut" name="statut" placeholder="statut">
                     </div>
             </div>
 
             <div class="card_info">
+                <label for="depart-datetime-local"></label>
                 <div class="rod">
-                    <label for="depart-datetime-local"></label>
                     <input type="datetime-local" id="depart-datetime-local" name="depart-datetime-local">
                 </div>
+                <label for="arrived-datetime-local"></label>
                 <div class="rod">
-                    <label for="arrived-datetime-local"></label>
                     <input type="datetime-local" id="arrived-datetime-local" name="arrived-datetime-local">
                 </div>
                 <div class="rod">
-                    <label for="electric"></label>
-                    <input type="text" id="electric" name="electric">
+                    <input type="checkbox">
+                    <input type="text" id="electric" name="electric" placeholder="electric">
                 </div>
             </div>
 
-            <button class="rod_infoplus">Voir les détails</button>
+            <button class="rod_infoplus">Les détails</button>
 
             <div class="card_filters">
                 <h3>Filtres covoiturage</h3>
                     <div class="rod">
-                        <label for="animal"></label>
+                        
                         <input type="checkbox" id="animal" name="animal" class="checkbox">
-                        <input type="text">
+                        <label for="animal">animal</label>
                     </div>
                     <div class="rod">
-                        <label for="noanimal"></label>
                         <input type="checkbox" id="noanimal" name="noanimal"  class="checkbox">
-                        <input type="text">
+                        <label for="noanimal">noanimal</label>
                     </div>
                     <div class="rod">
-                        <label for="smoke"></label>
                         <input type="checkbox" id="smoke" name="smoke"  class="checkbox">
-                        <input type="text">
+                        <label for="smoke">smoke</label>
                     </div>
                     <div class="rod">
-                        <label for="nosmoke"></label>
                         <input type="checkbox" id="nosmoke" name="nosmoke" class="checkbox">
-                        <input type="text">
+                        <label for="nosmoke">nosmoke</label>
                     </div>
             </div>
             <div class="rod_support">
