@@ -186,27 +186,26 @@ input{
 }
 .card_filters{
     margin-top: 10px;
-    height: 230px;
+    height: 250px;
     width: 300px;
     background-color: #260401;
     color: white;
     border: #98c433 solid 2px;
     border-radius: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 label{
-    height: 20px;
-    width: 100px;
     background-color: white;
     color: black;
     height: 30px;
-    width: 20px;
+    width: 200px;
     cursor: pointer;
-    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .rod_support{
     height: 50px;
@@ -225,7 +224,8 @@ label{
     border-radius: 100px;
     background: #ff3e3e;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     color: black;
     cursor: pointer;
 }
@@ -247,6 +247,21 @@ label{
     justify-content: center;
     cursor: pointer;
 }
+.card_filters{
+    margin-top: 10px;
+    height: 230px;
+    width: 300px;
+    background-color: #260401;
+    color: white;
+    border: #98c433 solid 2px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 footer{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
