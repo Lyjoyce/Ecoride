@@ -27,11 +27,11 @@ header{
     background-color:#639e3f;
     color: black;
 }
-.user-menu{
+.actorname-menu{
     display: flex;
     align-items: center;
 }
-#username-display{
+#actorname-display{
     background-color: white;
     border: none;
     color: black;
