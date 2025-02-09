@@ -224,7 +224,7 @@ label{
     border-radius: 100px;
     background: #ff3e3e;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     color: black;
     cursor: pointer;
