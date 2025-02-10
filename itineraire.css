@@ -1,0 +1,295 @@
+body{ 
+    font-family: 'Franklin Gothic Medium','Times New Roman', Times, serif sans-serif;
+}
+
+body{
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+header{
+    width: 320px;
+    background-color: #260401;
+}
+
+.btn_menu{
+    background-color: #98c433;
+    margin-left: 75%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.icon_menu{
+    height: 20px;
+    width: 20px;
+}
+.dropbtn {
+    background-color: white;
+    border: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+  }
+
+  .dropdown-content a:hover {
+    background-color:black;
+    color: white;
+}
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #98c433;}
+.logo_ecoride{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+}
+nav{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    width: 250px;
+    height: 30px;
+    margin-left:35px;
+    background-color: #260401;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px #639e3f;
+    position:absolute;
+    margin-top: -15px;
+}
+a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.ahome{
+    background-color: white;
+    color: #260401;
+    padding: 2px;
+}
+main{
+    padding: 10px;
+    background-color: #639e3f;
+}
+.search_my_itinerary{
+    width: 100px;
+    height: 100px;
+    border-radius: 0px;
+    margin-top: 10px;
+}
+.display{
+    display: flex;
+    justify-content: center;
+}
+.column{
+    margin: 20px;
+}
+.presentation_itinerary{
+    height: 140px;
+    width: 300px;
+    background-color: #98c433;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.img_search_my_itinerary{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: #26116A solid ;
+    margin-left: 30%;
+}
+.rod_presentation_itinerary{
+    width: 300px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #26116A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4px;
+    background-color:#260401;
+    color: white;
+}
+input{
+    cursor: pointer;
+}
+.checkbox{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    margin-top: 30px;
+    height: 200px;
+    width: 300px;
+    background-color: #98c433;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.halfrod_info{
+    height: 30px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #26116A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rod{
+    height: 30px;
+    width: 280px;
+    background-color: #260401;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+.half-rod{
+    height: 30px;
+    width: 200px;
+    background-color: #260401;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+.card{
+    margin-top: 10px;
+    height: 400px;
+    width: 300px;
+    background-color: #98c433;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rod_support{
+    height: 50px;
+    width: 260px;
+    background-color: #260401;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.search{
+    width: 250px;
+    height: 30px;
+    border-radius: 100px;
+    background: #ff3e3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+}
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    padding: 20px;
+    background-color: #260401;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    min-width: 768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header{
+    min-width: 768px;
+  }
+.logo_ecoride{
+    margin-left: 35%;
+}
+.btn_menu{
+    margin-left: 90%;
+}
+nav{
+    width: 700px;
+}
+.card{
+    width: auto;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rod{
+    width: 700px;
+}
+.card_info{
+    width: auto;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.rod_infoplus{
+    width: 700px;
+}
+.card_filters{
+    width: auto;
+   height: 250px;
+}
+.half-rod{
+    width: 350px;
+}
+.rod_support{
+    margin-top: 20px;
+    width: auto;
+}
+footer{
+    min-width: 768px;
+}
+}
