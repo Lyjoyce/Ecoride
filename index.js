@@ -1,5 +1,5 @@
 
-function showActorMenu(lastname){
+/*function showActorMenu(lastname){
     const actornameDisplay= document.getElementById("actorname-display")
     actornameDisplay.textContent= lastname
 }
@@ -20,3 +20,4 @@ document.getElementById("logout-btn").addEventListener("click", function(){
     localStorage.setItem("isAuthenticated",false)
     window.location.href="login.html"
 })
+    */
