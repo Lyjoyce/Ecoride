@@ -1,0 +1,68 @@
+[
+    {
+        "covoiturage": "Paris_Rennes",
+        "time": "03:30",
+        "price": "10 credits",
+        "ecologic": "gazoil",
+        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
+        "depart-datetime-local" : "03/07/2025 07:00",
+        "arrived" : "Gare de Rennes 19 place de la gare 35000 Rennes",
+        "arrived-datetime-local" : "03/07/2025 10:30",
+        "note" : 4
+    },
+    {
+        "covoiturage": "Paris_Rennes",
+        "time": "03:30",
+        "price": "12 credits",
+        "ecologic": "electrique",
+        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
+        "depart-datetime-local" : "03/07/2025 19:00",
+        "arrived" : "Gare de Rennes 19 place de la gare 35000 Rennes",
+        "arrived-datetime-local" : "03/07/2025 22:30",
+        "note" : 4
+    },
+    {
+        "covoiturage": "Paris_Deauville",
+        "time": "02:30",
+        "price": "5 credits",
+        "ecologic": "gazoil",
+        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
+        "depart-datetime-local" : "03/08/2025 07:00",
+        "arrived" : "Gare Deauville-Trouville place Louis Armand 14200 Deauville-Trouville",
+        "arrived-datetime-local" : "03/08/2025 10:30",
+        "note" : 3
+    },
+    {
+        "covoiturage": "Paris_Deauville",
+        "time": "02:30",
+        "price": "8 credits",
+        "ecologic": "electrique",
+        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
+        "depart-datetime-local" : "03/07/2025 19:00",
+        "arrived" : "Gare Deauville-Trouville place Louis Armand 14200 Deauville-Trouville",
+        "arrived-datetime-local" : "03/07/2025 22:30",
+        "note" : 4
+    },
+    {
+        "covoiturage": "Paris_Amboise",
+        "time": "02:30",
+        "price": "7 credits",
+        "ecologic": "gazoil",
+        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
+        "depart-datetime-local" : "03/07/2025 07:00",
+        "arrived" : "Gare Amboise rue Jules Ferry 37400 Amboise",
+        "arrived-datetime-local" : "03/07/2025 10:30",
+        "note" : 3
+    },
+    {
+        "covoiturage": "Paris_Amboise",
+        "time": "02:30",
+        "price": "9 credits",
+        "ecologic": "electrique",
+        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
+        "depart-datetime-local" : "03/07/2025 19:00",
+        "arrived" : "Gare Amboise rue Jules Ferry 37400 Amboise",
+        "arrived-datetime-local" : "03/07/2025 22:30",
+        "note" : 5
+    }
+]
