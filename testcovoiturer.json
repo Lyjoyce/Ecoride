@@ -1,9 +1,9 @@
 [
     {
-        "covoiturage": "paris-rennes",
+        "covoiturage_id": "paris-rennes",
         "time": "03:30",
         "price": "10 credits",
-        "energy": "gazoil",
+        "energy": "essence",
         "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
         "depart-datetime-local" : "00/00/2025 ",
         "arrived" : "Gare de Rennes 19 place de la gare 35000 Rennes",
@@ -12,7 +12,7 @@
         "place disponible" : ""
     },
     {
-        "covoiturage": "paris-rennes",
+        "covoiturage_id": "paris-rennes",
         "time": "03:30",
         "price": "12 credits",
         "energy": "electrique",
@@ -24,10 +24,10 @@
         "place disponible" : ""
     },
     {
-        "covoiturage": "paris-deauville",
+        "covoiturage_id": "paris-deauville",
         "time": "02:30",
         "price": "5 credits",
-        "energy": "gazoil",
+        "energy": "essence",
         "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
         "depart-datetime-local" : "03/08/2025 07:00",
         "arrived" : "Gare Deauville-Trouville place Louis Armand 14200 Deauville-Trouville",
@@ -36,7 +36,7 @@
         "place disponible" : ""
     },
     {
-        "covoiturage": "paris-deauville",
+        "covoiturage_id": "paris-deauville",
         "time": "02:30",
         "price": "8 credits",
         "energy": "electrique",
@@ -48,10 +48,10 @@
         "place disponible" : ""
     },
     {
-        "covoiturage": "paris-amboise",
+        "covoiturage_id": "paris-amboise",
         "time": "02:30",
         "price": "7 credits",
-        "energy": "gazoil",
+        "energy": "essence",
         "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
         "depart-datetime-local" : "03/07/2025 07:00",
         "arrived" : "Gare Amboise rue Jules Ferry 37400 Amboise",
@@ -60,7 +60,7 @@
         "place disponible" : ""
     },
     {
-        "covoiturage": "paris-amboise",
+        "covoiturage_id": "paris-amboise",
         "time": "02:30",
         "price": "9 credits",
         "energy": "electrique",
