@@ -13,14 +13,15 @@
     resultDIV.innerHTML = `il reste ${y} places disponibles .`
 
     //Affichage
-let currentTestcovoiturerIndex = 0;
-let testcovoiturer = [];
-async function loadTestcovoiturer(){
-    try{
-        const response = await fetch("testcovoiturer.json")
-        testcovoiturer = await response.json()
-        console.log()
-    }catch(error){
+    const URL = "https://43e73171-8978-4c2e-8317-221673b5d16c.mock.pstmn.io/api/TestCovoiturer"
+    let currentTestcovoiturerIndex = 0;
+    let testcovoiturer = [];
+    async function loadTestcovoiturer(){
+        try{
+            const response = await fetch(url)
+            testcovoiturer = await response.json()
+            console.log()
+        }catch(error){
         console.log ("erreur lors du chargement", error)
     }
 }
