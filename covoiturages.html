@@ -34,38 +34,17 @@
     </header>
 
     <main>
-        <section class="formulaire">
+        <section class="card-covoiturage">
             <div class="card">
-                <div class="display">
-                    <img src="images/search_itinerary.png" class="search_my_itinerary" alt="image voiture">
-                    <div class="column">
-                        <div class="halfrod_info" id="places"></div>
-                        <div class="halfrod_info" id="credits"></div>
-                    </div>
-                </div>
 
                 <div class="rod">
-                    <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo">
+                    <input type="text" id="paris-rennes" name="paris-rennes" placeholder="Paris-Rennes">
                 </div>
                 <div class="rod">
-                    <input type="number" id="note" name="note" min="0" max="5" placeholder="note">
+                    <input type="time" id="time" name="time">
                 </div>
-                    <div class="half-rod">
-                        <input type="number" id="price" name="price" min="3" max="15" placeholder="prix">
-                    </div>
-                    <div class="half-rod">
-                        <input type="text" id="statut" name="statut" placeholder="statut">
-                    </div>
-            </div>
-
-            <div class="card_info">
-                <label for="depart-datetime-local"></label>
                 <div class="rod">
-                    <input type="datetime-local" id="depart-datetime-local" name="depart-datetime-local">
-                </div>
-                <label for="arrived-datetime-local"></label>
-                <div class="rod">
-                    <input type="datetime-local" id="arrived-datetime-local" name="arrived-datetime-local">
+                    <input type="number" id="price" name="price" min="3" max="15" placeholder="prix">
                 </div>
                 <div class="rod">
                     <input type="checkbox">
@@ -75,28 +54,41 @@
                     <input type="checkbox">
                     <input type="text" id="gazoil" name="gazoil" placeholder="gazoil">
                 </div>
+                <div class="rod">
+                    <input type="text" name="statut" placeholder="statut">
+                </div>
+                <label for="depart-datetime-local">Départ</label>
+                <div class="rod">
+                    <input type="datetime-local" id="depart-datetime-local" name="depart-datetime-local">
+                </div>
+                <label for="arrived-datetime-local">Arrivée</label>
+                <div class="rod">
+                    <input type="datetime-local" id="arrived-datetime-local" name="arrived-datetime-local">
+                </div>
             </div>
+        </section>
+            
 
             <button class="rod_infoplus">Les détails</button>
 
             <div class="card_filters">
                 <h3>Filtres covoiturage</h3>
-                    <div class="rod">
-                        <input type="checkbox" id="animal" name="animal" class="checkbox">
-                        <label for="animal">animal</label>
-                    </div>
-                    <div class="rod">
-                        <input type="checkbox" id="noanimal" name="noanimal"  class="checkbox">
-                        <label for="noanimal">pas d'animal</label>
-                    </div>
-                    <div class="rod">
-                        <input type="checkbox" id="smoke" name="smoke"  class="checkbox">
-                        <label for="smoke">fumeur</label>
-                    </div>
-                    <div class="rod">
-                        <input type="checkbox" id="nosmoke" name="nosmoke" class="checkbox">
-                        <label for="nosmoke">non fumeur</label>
-                    </div>
+                <div class="rod">
+                    <input type="checkbox" id="animal" name="animal" class="checkbox">
+                    <label for="animal">animal</label>
+                </div>
+                <div class="rod">
+                    <input type="checkbox" id="noanimal" name="noanimal" class="checkbox">
+                    <label for="noanimal">pas d'animal</label>
+                </div>
+                <div class="rod">
+                    <input type="checkbox" id="smoke" name="smoke" class="checkbox">
+                    <label for="smoke">fumeur</label>
+                </div>
+                <div class="rod">
+                    <input type="checkbox" id="nosmoke" name="nosmoke" class="checkbox">
+                    <label for="nosmoke">non fumeur</label>
+                </div>
             </div>
             <div class="rod_support">
                 <button class="search">Participer</button>

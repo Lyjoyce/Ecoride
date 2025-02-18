@@ -1,6 +1,6 @@
 [
     {
-        "covoiturage": "Paris_Rennes",
+        "covoiturage": "paris-rennes",
         "time": "03:30",
         "price": "10 credits",
         "energy": "gazoil",
@@ -12,7 +12,7 @@
         "place disponible" : ""
     },
     {
-        "covoiturage": "Paris_Rennes",
+        "covoiturage": "Paris-Rennes",
         "time": "03:30",
         "price": "12 credits",
         "energy": "electrique",
@@ -24,7 +24,7 @@
         "place disponible" : ""
     },
     {
-        "covoiturage": "Paris_Deauville",
+        "covoiturage": "Paris-Deauville",
         "time": "02:30",
         "price": "5 credits",
         "energy": "gazoil",
@@ -36,7 +36,7 @@
         "place disponible" : ""
     },
     {
-        "covoiturage": "Paris_Deauville",
+        "covoiturage": "Paris-Deauville",
         "time": "02:30",
         "price": "8 credits",
         "energy": "electrique",
@@ -48,7 +48,7 @@
         "place disponible" : ""
     },
     {
-        "covoiturage": "Paris_Amboise",
+        "covoiturage": "Paris-Amboise",
         "time": "02:30",
         "price": "7 credits",
         "energy": "gazoil",
@@ -60,7 +60,7 @@
         "place disponible" : ""
     },
     {
-        "covoiturage": "Paris_Amboise",
+        "covoiturage": "Paris-Amboise",
         "time": "02:30",
         "price": "9 credits",
         "energy": "electrique",
