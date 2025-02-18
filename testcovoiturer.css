@@ -131,6 +131,9 @@ main{
     padding: 10px;
     background-color: #639e3f;
 }
+.energy-btn{
+    cursor: pointer;
+}
 .search_my_itinerary{
     width: 100px;
     height: 100px;

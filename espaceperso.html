@@ -151,14 +151,27 @@
 
         <form id="question-form">
 
-                <p class="question">Place devant droite</p>
-                <label><input id="seatA" type="radio" name="q1" value="seatA">seatA</label>
-                <p class="question">Place arrière droite</p>
-                <label><input type="radio" name="q1" value="seatB">seatB</label>
-                <p class="question">Place arrière gauche</p>
-                <label><input type="radio" name="q1" value="seatC">seatC</label>
+                <p class="question"></p>
+                <label><input type="radio" name="q1" value="seatA">seat</label>
 
-        </form>
+                <p class="question"></p>
+                <label><input type="radio" name="q1" value="seatB">seat</label>
+                <p class="question"></p>
+                <label><input type="radio" name="q1" value="seatC">seat</label>
+            </form>
+        
+                <div class="calculate-places">
+                    
+                    <button id="demo1" type="number" min="1" max="3"></button>
+                    <button id="demo2" type="number" min="1" max="1"></button>
+                </div>
+
+            <div class="rod_support">
+                <button type="button" onclick="disponible()" class="search">Submit</button>
+            </div>
+            <div id="result"></div>
+
+       
         <div class="card_maj">
             <div class="rod">
                 <label for="crédit demandé">crédit demandé
@@ -173,11 +186,9 @@
                 <div class="halfrod_info">place</div>
             </div>
         </div>
+        
 
-        <div class="rod_support">
-            <button type="button" onclick="submit()" class="search">Submit</button>
-        </div>
-        <div id="result"></div>
+        
     </main>
 
     <footer>
@@ -185,7 +196,7 @@
         <a>Mentions légales</a>
         <a>Avis</a>
     </footer>
-
+    
     <script src="espaceperso.js"></script>
 </body>
 

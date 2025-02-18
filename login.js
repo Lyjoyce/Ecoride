@@ -24,7 +24,7 @@ function loginActor(){
 /*function checkAuth(){
     const isAuthenticated =localStorage.getItem("isAuthenticated")
     if(isAuthenticated !== "true"){
-        alert("Veuillez vous connecter pour acceder au quiz") 
+        alert("Veuillez vous connecter") 
         window.location.href="login.html"
     }
 }*/

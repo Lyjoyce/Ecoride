@@ -1,54 +1,45 @@
 let currentCovoituragesIndex =0
 let covoiturages = []
-let selectedEcologic = ""
+let selectedEnergy = ""
 
-async function loadCovoiturages(ecologic){
-    console.log("covoiturage choisi" + ecologic)
+async function loadCovoiturages(energy){
+    console.log("energy choisie" + energy)
     try{
         const response = await fetch ("covoiturages.json")
         const allCovoiturages = await response.json()
 
-        covoiturages= allCovoiturages.filter((c) => c.ecologic === ecologic)
-        selectedEcologic = ecologic
+        covoiturages= allCovoiturages.filter((c) => c.energy === energy)
+        selectedEnergy = energy
         currentCovoituragesIndex = 0
 
-        startQuiz()
+        start()
     }catch (error) {
-        console.log("Erreur lors du chargement des questions", error)
+        console.log("Erreur lors du chargement", error)
     }
 }
-function startForm() {
-    document.querySelector(".eco-selection").classList.add("hidden")
-    document.getElementById("form-container").classList.remove("hidden")
-    showQuestion()
-}
-function showQuestion() {
-    if(currentQuestionIndex < questions.length) {
-        console.log(questions)
-        const questionData = questions[currentQuestionIndex]
-        console.log( "question data" + questionData)
-        const questionContainer= document.getElementById("quiz-container")
 
-        questionContainer.innerHTML = `
-        <div class"question">
-        <p> ${questionData.question} <p/>
-        <div/>
-        <form id="quiz-form">
-         ${questionData.options
-         .map(
-                (option, index)=> `
-                <label class="option"> 
-                    <input type="radio" name="answer" value="${option}">
-                    <span class="custom-radio"></span>
-                    ${option}
-                </label>
-                `
-                )
-            .join("")}
-            <button type="button" onclick="submitAnswer()">Soumettre</button>
-        </form>
-        `
-        }else{
-            showFinalResult()
-        }
-}
+/*
+<html>
+<body>
+
+<h1>JavaScript Operators</h1>
+<h2>The -- Operator</h2>
+
+<p>y = 5, calculate x = y--:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<p><strong>Note:</strong> y is decremented after it is assigned to x (post-decremented).</p>.
+
+<script>
+let y = 5;
+let x = y--;
+document.getElementById("demo1").innerHTML = "Value of y: " + y;
+document.getElementById("demo2").innerHTML = "Value of x: " + x;
+</script>
+
+</body>
+</html>
+*/
+
