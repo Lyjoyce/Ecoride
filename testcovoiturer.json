@@ -1,74 +1,151 @@
 [
     {
-        "covoiturage_id": "paris-rennes",
-        "time": "03:30",
-        "price": "10 credits",
-        "energy": "essence",
-        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
-        "depart-datetime-local" : "00/00/2025 ",
-        "arrived" : "Gare de Rennes 19 place de la gare 35000 Rennes",
-        "arrived-datetime-local" : "00/0O/2025 ",
-        "note" : 4,
-        "place disponible" : ""
+      "covoiturage": [" De: Paris, 75015 gare Montparnasse",
+      "A: Rennes, 35000 gare de Rennes ",
+      "daydepart : jeudi :19h00",
+      "dayarrivee : jeudi : 22h30",
+      "time: 03h30", 
+      "price: 12 credits",
+      "energy :electrique",
+      "driving: bon",
+      "note : 4",
+        "places disponibles : 3"
+      ],
+      "option": ["jeudi", "vendredi", "samedi"],
+      "answer": "jeudi",
+      "energy" : "electrique"
     },
     {
-        "covoiturage_id": "paris-rennes",
-        "time": "03:30",
-        "price": "12 credits",
-        "energy": "electrique",
-        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
-        "depart-datetime-local" : "03/07/2025 19:00",
-        "arrived" : "Gare de Rennes 19 place de la gare 35000 Rennes",
-        "arrived-datetime-local" : "03/07/2025 22:30",
-        "note" : 4,
-        "place disponible" : ""
+      "covoiturage": ["De: Paris, 75015 gare Montparnasse",
+       "A: Deauville, 14200 gare de Deauville-Trouville ",
+       "daydepart : vendredi :19h00",
+       "dayarrivee : vendredi : 22h30",
+       "time: 02h30", 
+       "price: 8 credits",
+       "energy :electrique",
+       "driving: bon",
+       "note : 4",
+        "places disponibles : 3"
+        ],
+        "option": ["jeudi", "vendredi", "samedi"],
+      "answer": "vendredi",
+       "energy" : "electrique"
     },
     {
-        "covoiturage_id": "paris-deauville",
-        "time": "02:30",
-        "price": "5 credits",
-        "energy": "essence",
-        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
-        "depart-datetime-local" : "03/08/2025 07:00",
-        "arrived" : "Gare Deauville-Trouville place Louis Armand 14200 Deauville-Trouville",
-        "arrived-datetime-local" : "03/08/2025 10:30",
-        "note" : 3,
-        "place disponible" : ""
+      "covoiturage": [" De :Paris, 75015 gare Montparnasse",
+      "A: Amboise, 37400 gare de Amboise",
+      "daydepart : vendredi :O7h00",
+      "dayarrivee : vendredi : 10h30",
+      "time: 02h30", 
+      "price: 9 credits",
+      "energy :electrique",
+      "driving: moyen",
+      "note : 3",
+        "places disponibles : 3"
+      ],
+     "option": ["jeudi", "vendredi", "samedi"],
+    "answer": "vendredi",
+     "energy" : "electrique"
+  },
+  {
+      "covoiturage": [" De :Paris, 75015 gare Montparnasse",
+      "A: Amboise, 37400 gare de Amboise",
+      "daydepart : samedi :07h00",
+      "dayarrivee : samedi : 10h30",
+      "time: 02h30", 
+      "price: 9 credits",
+      "energy :electrique",
+      "driving: bon",
+      "note : 4",
+      "places disponibles : 3"
+      ],
+     "option": ["jeudi", "vendredi", "samedi"],
+    "answer": "samedi",
+    "energy" : "electrique"
+  } ,
+
+    {
+      "covoiturage": [" De: Paris, 75015 gare Montparnasse",
+      "A: Rennes, 35000 gare de Rennes ",
+      "daydepart : samedi :07h00",
+      "dayarrivee : samedi : 10h30",
+      "time: 03h30", 
+      "price: 12 credits",
+      "energy :electrique",
+      "driving: bon",
+      "note : 4",
+      "places disponibles : 3"
+      ],
+      "option": ["jeudi", "vendredi", "samedi"],
+      "answer": "samedi",
+      "energy" : "electrique"
     },
     {
-        "covoiturage_id": "paris-deauville",
-        "time": "02:30",
-        "price": "8 credits",
-        "energy": "electrique",
-        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
-        "depart-datetime-local" : "03/07/2025 19:00",
-        "arrived" : "Gare Deauville-Trouville place Louis Armand 14200 Deauville-Trouville",
-        "arrived-datetime-local" : "03/07/2025 22:30",
-        "note" : 4,
-        "place disponible" : ""
+      "covoiturage": ["De: Paris, 75015 gare Montparnasse",
+        "A: Deauville, 14200 gare de Deauville-Trouville ",
+        "daydepart : samedi :07h00",
+        "dayarrivee : samedi : 10h30",
+        "time: 02h30", 
+        "price: 8 credits",
+        "energy :electrique",
+        "driving: bon",
+        "note : 4",
+        "places disponibles : 3"
+        ],
+        "option": ["jeudi", "vendredi", "samedi"],
+      "answer": "samedi",
+        "energy" : "electrique"
     },
     {
-        "covoiturage_id": "paris-amboise",
-        "time": "02:30",
-        "price": "7 credits",
-        "energy": "essence",
-        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
-        "depart-datetime-local" : "03/07/2025 07:00",
-        "arrived" : "Gare Amboise rue Jules Ferry 37400 Amboise",
-        "arrived-datetime-local" : "03/07/2025 10:30",
-        "note" : 3,
-        "place disponible" : ""
+      "covoiturage": [" De: Paris, 75015 gare Montparnasse",
+      "A: Rennes, 35000 gare de Rennes ",
+      "daydepart : vendredi :19h00",
+      "dayarrivee : vendredi : 22h30",
+      "time: 03h30", 
+      "price: 10 credits",
+      "energy :essence",
+      "driving: moyen",
+      "note : 3",
+    "places disponibles : 3"
+      ],
+      "option": ["jeudi", "vendredi", "samedi"],
+      "answer": "vendredi",
+      "energy" : "nonelectrique"
     },
     {
-        "covoiturage_id": "paris-amboise",
-        "time": "02:30",
-        "price": "9 credits",
-        "energy": "electrique",
-        "depart" : "Gare Montparnasse 17 boulevard de Vaugirard 75015 Paris",
-        "depart-datetime-local" : "03/07/2025 19:00",
-        "arrived" : "Gare Amboise rue Jules Ferry 37400 Amboise",
-        "arrived-datetime-local" : "03/07/2025 22:30",
-        "note" : 5,
-        "place disponible" : ""
+      "covoiturage": [" De: Paris, 75015 gare Montparnasse",
+      "A: Deauville, 14200 gare de Deauville-Trouville ",
+      "daydepart : jeudi :O7h00",
+      "dayarrivee : jeudi: 10h30",
+      "time: 03h30", 
+      "price: 10 credits",
+      "energy :essence",
+      "driving: moyen",
+      "note : 3",
+     "places disponibles : 3"
+      ],
+      "option": ["jeudi", "vendredi", "samedi"],
+      "answer": "jeudi",
+     "energy" : "nonelectrique"
+    },
+    
+    
+    {
+        "covoiturage": ["De: Paris, 75015 gare Montparnasse",
+        "A: Amboise, 37400 gare de Amboise ",
+        "daydepart : jeudi :O7h00",
+        "dayarrivee : jeudi: 10h30",
+        "time: 02h30", 
+        "price: 7 credits",
+        "energy :essence",
+        "driving: bon",
+        "note : 4",
+        "places disponibles : 3"
+        ],
+       "option": ["jeudi", "vendredi", "samedi"],
+      "answer": "jeudi",
+        "energy" : "nonelectrique"
     }
 ]
+
+

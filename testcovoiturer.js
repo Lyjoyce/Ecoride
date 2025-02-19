@@ -1,7 +1,7 @@
 let currentCovoituragesIndex =0
 let covoiturages = []
 let selectedEnergy = ""
-
+const URL = "https://bac8bd94-cbae-4bad-9347-87dedf026e61.mock.pstmn.io/api/AllCovoiturages"
 async function loadCovoiturages(energy){
     console.log("energy choisie" + energy)
     try{
