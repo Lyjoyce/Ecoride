@@ -17,7 +17,6 @@ header{
     width: 320px;
     background-color: #260401;
 }
-
 .appbar{
     max-width: 320px;
     display: flex;
@@ -105,7 +104,7 @@ main{
     background-color: #639e3f;
 }
 .card-covoiturage{
-    height: 450px;
+    height: 500px;
     width: 300px;
     background-color: #98c433;
     border-radius: 5px;
@@ -124,9 +123,6 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-input{
-    cursor: pointer;
 }
 
 .rod{
@@ -153,7 +149,6 @@ input{
     justify-content: center;
     padding: 2px;
 }
-
 .card_info{
     margin-top: 10px;
     height: 230px;
@@ -165,21 +160,48 @@ input{
     flex-direction: column;
     align-items: center;
 }
-.rod_infoplus{
-    width: 700px;
-}
-.card_filters{
+
+.search_my_itinerary{
+    width: 100px;
+    height: 100px;
+    border-radius: 0px;
     margin-top: 10px;
-    height: 250px;
+}
+.display{
+    display: flex;
+    justify-content: center;
+}
+.column{
+    margin: 20px;
+}
+
+.rod_presentation_itinerary{
     width: 300px;
-    background-color: #260401;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #26116A;
     color: white;
-    border: #98c433 solid 2px;
-    border-radius: 5px;
-    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+}
+
+.checkbox{
     display: flex;
     flex-direction: column;
+}
+
+.halfrod_info{
+    height: 30px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #26116A;
+    color: white;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .rod_support{

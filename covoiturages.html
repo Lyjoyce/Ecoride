@@ -36,40 +36,35 @@
     <main>
         <section class="card-covoiturage">
             <div class="card">
-
-                <div class="rod">
-                    <input type="text" id="paris-rennes" name="paris-rennes" placeholder="Paris-Rennes">
-                </div>
-                <div class="rod">
-                    <input type="time" id="time" name="time">
-                </div>
-                <div class="rod">
-                    <input type="number" id="price" name="price" min="3" max="15" placeholder="prix">
-                </div>
-                <div class="rod">
-                    <input type="checkbox">
-                    <input type="text" id="electric" name="electric" placeholder="electrique">
-                </div>
-                <div class="rod">
-                    <input type="checkbox">
-                    <input type="text" id="essence" name="essence" placeholder="essence">
-                </div>
-                <div class="rod">
-                    <input type="text" name="statut" placeholder="statut">
-                </div>
-                <label for="depart-datetime-local">Départ</label>
-                <div class="rod">
-                    <input type="datetime-local" id="depart-datetime-local" name="depart-datetime-local">
-                </div>
-                <label for="arrived-datetime-local">Arrivée</label>
-                <div class="rod">
-                    <input type="datetime-local" id="arrived-datetime-local" name="arrived-datetime-local">
-                </div>
-            </div>
+                
+                    <div class="rod_presentation_itinerary">Covoiturage_id</div> 
+                    <div class="dep">DE : Paris 75015 gare Montparnasse</div>
+                    <div class="arrived">A:Rennes 35000 gare de Rennes</div>
+                    <div class="rod">départ :    jeudi :19h00 </div>
+                    <div class="rod">arrivée :  jeudi : 22h30</div>
+                    <div class="rod">durée : 03h30</div>
+                    <div class="rod"> prix: 12 crédits</div>
+                    <div class="rod">avis : bon</div>
+                    <div class="rod">note : 4</div>
+                    <div class="rod">places disponibles : 3</div>
+                   
+                    <div class="half-rod">
+                        <label for="electric">écologique</label>
+                        <input type="checkbox" checked id="electric" name="electric">
+                    </div>
+            
+                    <div class="card">
+                        <div class="rod_presentation_itinerary">Filtres</div>
+                        <div class="display">
+                            <img src="images/conducteur_eliot.png" class="search_my_itinerary" alt="image voiture">
+                            <div class="column">
+                                <div class="halfrod_info" id="conducteur">Tom</div>
+                                <div class="halfrod_info" id="conducteurname">ZEN</div>
+                            </div>
+                        </div>
+                    </div>
         </section>
             
-
-            <button class="rod_infoplus">Les détails</button>
 
             <div class="card_filters">
                 <h3>Filtres covoiturage</h3>

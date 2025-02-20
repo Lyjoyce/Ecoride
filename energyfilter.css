@@ -134,6 +134,11 @@ main{
 .energy-btn{
     cursor: pointer;
 }
+.question p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
 .search_my_itinerary{
     width: 100px;
     height: 100px;

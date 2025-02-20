@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person">
-    <title>Covoiturage detaillé</title>
+    <title>Ecoride presentation</title>
 </head>
 
 <body>
@@ -17,13 +17,13 @@
                 <img src="icons/icon_menu.png" class="icon_menu" alt="icon_menu">
             </button>
             <div class="dropdown-content">
-                <a href="#">covoiturages</a>
-                <a href="#">contact</a>
-                <a href="login.html">connection</a>
-                <a href="login.html">déconnection</a>
+              <a href="#">covoiturages</a>
+              <a href="#">contact</a>
+              <a href="login.html">connection</a>
+              <a href="login.html">déconnection</a>
             </div>
         </div>
-
+        
         <img src="images/logo_ecoride.png" class="logo_ecoride" alt="logo_ecoride">
 
         <nav>
@@ -35,102 +35,30 @@
 
     <main>
 
-        <form>
+        <div class="presentation">
+            <h1>COVOITURAGE</h1>
+            <img src="images/car_covoiturage.png" class="img_presentation car_covoiturage" alt="car_covoiturage">
+            <img src="images/car_eco.png" class="img_presentation car_eco" alt="car_eco">
+            <img src="images/car_bio.png" class="img_presentation car_bio" alt="car_bio">
+            <h2 class="txt_eco_slogan">ECOLOGIQUE ECONOMIQUE ECORESPONSABLE</h2>
+        </div>
+        <div class="presentation_itinerary">
+            <img src="images/search_itinerary.png" class="img_search_my_itinerary"
+                alt="personne fait une recherche sur smartphone">
+            <div class="rod_presentation_itinerary">Trouver mon itinéraire</div>
+        </div>
+
+        <form class="formulaire">
             <div class="card">
-                <div class="rod_presentation_itinerary">Covoiturage_id</div> 
-                <div class="rod">Depart
-                    <input type="text" placeholder="Paris">
-                </div>
-                <div class="rod">Arrive
-                    <input type="text" placeholder="Rennes">
-                </div>
-                <div class="rod">
-                    <input type="datetime-local">
-                </div>
-                <div class="rod">
-                    <input type="datetime-local">
-                </div>
-                <div class="rod">
-                    <input type="time" name="time" max="04:00">
-                </div>
-               
-                <div class="half-rod">
-                    <label for="electric">électrique</label>
-                    <input type="checkbox" id="electric" name="electric">
-                </div>
+                <div class="rod"><a href="parisrennes.html">Paris-Rennes</a></div>
+                <div class="rod"><a href="parisdeauville.html">Paris-Deauville</a></div>
+                <div class="rod"><a href="parisamboise.html">Paris-Amboise</a></div>
             </div>
-            </form>
-
-            <form>
-                <div class="card">
-                    <div class="rod_presentation_itinerary">Filtres</div>
-                    <div class="display">
-                        <img src="images/conducteur_eliot.png" class="search_my_itinerary" alt="image voiture">
-                        <div class="column">
-                            <div class="halfrod_info" id="places"></div>
-                            <div class="halfrod_info" id="credits"></div>
-                        </div>
-                    </div>
-                    <div class="rod">
-                        <label for="pseudo">Pseudo</label>
-                        <input type="text" id="pseudo" name="pseudo">
-                    </div>
-                    <div class="rod">
-                        <label for="disponible">disponible</label>
-                        <input type="number" id="disponible" name="disponible" min="1" max="3" placeholder="place disponible">
-                    </div>
-                    <div class="half-rod">
-                        <label for="note">Note sur 5</label>
-                        <input type="number" id="note" name="note" min="1" max="5" placeholder="note">
-                    </div>
-                    <div class="half-rod">
-                        <label for="price">Prix</label>
-                        <input type="number" id="price" name="price" min="3" max="20" placeholder="price">
-                    </div>
-                </div>
-            </form>
-
-            <div class="card_preferences">
-                <h3>Préférences du conducteur</h3>
-                    <div class="rod">
-                        <label for="animal">animal</label>
-                        <input type="checkbox" id="animal" name="animal" class="checkbox">
-                    </div>
-                    <div class="rod">
-                        <label for="noanimal">noanimal</label>
-                        <input type="checkbox" id="noanimal" name="noanimal"  class="checkbox">
-                    </div>
-                    <div class="rod">
-                        <label for="smoke">smoke</label>
-                        <input type="checkbox" id="smoke" name="smoke"  class="checkbox">
-                    </div>
-                    <div class="rod">
-                        <label for="nosmoke">nosmoke</label>
-                        <input type="checkbox" id="nosmoke" name="nosmoke" class="checkbox">
-                    </div>
-            </div>
-            <div class="card_details">
-                <h3> Détails du covoiturage</h3>
-                <div >
-                    <h4>Avis</h4>
-                    <div class="conducteur_avis">
-
-                    </div>
-                </div>
-                <div>
-                    <h4>Véhicule</h4>
-                    <div class="car_energie">
-
-                    </div>
-                </div>
-
-            </div>
-
             <div class="rod_support">
-                <a href="espaceperso.html" class="ablack search">Participer</a>
+                <a href="details.html" class="ablack search">Choisir les détails</a>
+                <img src="icons/icon_search_black.png" class="icon-search" alt="icon search">
             </div>
-
-
+        </form>
     </main>
 
     <footer>
@@ -141,5 +69,4 @@
 
     <script src="index.js"></script>
 </body>
-
 </html>

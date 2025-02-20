@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person">
+    <title>Covoiturage detaillé</title>
+</head>
+
+<body>
+    <header>
+        <div class="dropdown btn_menu">
+            <button class="dropbtn">
+                <img src="icons/icon_menu.png" class="icon_menu" alt="icon_menu">
+            </button>
+            <div class="dropdown-content">
+                <a href="#">covoiturages</a>
+                <a href="#">contact</a>
+                <a href="login.html">connection</a>
+                <a href="login.html">déconnection</a>
+            </div>
+        </div>
+
+        <img src="images/logo_ecoride.png" class="logo_ecoride" alt="logo_ecoride">
+
+        <nav>
+            <a href="index.html" class="ahome">Home</a>
+            <a href="register.html" class="acreer_uncompte">Créer un compte</a>
+            <a href="login.html" class="alogin">Login</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <form>
+            <div class="card">
+                <div class="presentation_liens_covoiturages">Covoiturage : Paris-Rennes</div> 
+                <div class="dep">DE : Paris 75015 gare Montparnasse</div>
+                <div class="arrived">A:Rennes 35000 gare de Rennes</div>
+                <div class="rod">départ :    jeudi :19h00 </div>
+                <div class="rod">arrivée :  jeudi : 22h30</div>
+                <div class="rod">durée : 03h30</div>
+                <div class="rod"> prix: 12 crédits</div>
+                <div class="rod">avis : bon</div>
+                <div class="rod">note : 4</div>
+                <div class="rod">places disponibles : 3</div>
+               
+                <div class="half-rod">
+                    <label for="electric">écologique</label>
+                    <input type="checkbox" checked id="electric" name="electric">
+                </div>
+            </div>
+            </form>
+
+            <form>
+                <div class="card">
+                    <div class="rod_presentation_itinerary">Filtres</div>
+                    <div class="display">
+                        <img src="images/conducteur_eliot.png" class="search_my_itinerary" alt="image voiture">
+                        <div class="column">
+                            <div class="halfrod_info" id="conducteur">Tom</div>
+                            <div class="halfrod_info" id="conducteurname">ZEN</div>
+                        </div>
+                    </div>
+
+                    <div class="card_preferences">
+                        <h3>Préférences du conducteur</h3>
+                            <div class="rod">
+                                <label for="animal">animal</label>
+                                <input type="checkbox" checked id="animal" name="animal" class="checkbox">
+                            </div>
+                            <div class="rod">
+                                <label for="noanimal">noanimal</label>
+                                <input type="checkbox" id="noanimal" name="noanimal"  class="checkbox">
+                            </div>
+                            <div class="rod">
+                                <label for="smoke">smoke</label>
+                                <input type="checkbox" id="smoke" name="smoke"  class="checkbox">
+                            </div>
+                            <div class="rod">
+                                <label for="nosmoke">nosmoke</label>
+                                <input type="checkbox" checked="nosmoke" name="nosmoke" class="checkbox">
+                            </div>
+                            <div class="rod">
+                                <label for="autre">autre</label>
+                                <input type="checkbox" name="autre" class="checkbox">
+                            </div>
+                    </div> 
+                </div>
+            </form>
+
+            <div class="card_details">
+                <h3> Voir les avis </h3>
+                <div class="conducteur_avis">
+                    <label for="avis">Bonne conduite</label>
+                    <label for="avis">conducteur recommandé</label>
+                </div>
+                <h3>Véhicule</h3>
+                    <div class="car_energie">
+                        <label for="proprietaire">Tom ZEN</label>
+                        <label for="immatriculation">immatriculation : AA-001-AA</label>
+                        <label for="date 1ere ">01/01/2024</label>
+                        <label for="marque">BMWi5</label>
+                        <label for="modele"></label>
+                        <label for="couleur"></label>
+                        <label for="energie">électrique</label>
+                        <label for=""></label>
+
+                    </div>
+               
+
+            </div>
+
+            <div class="rod_support">
+                <a href="login.html" class="ablack search">Participer</a>
+            </div>
+
+
+    </main>
+
+    <footer>
+        <a>ecoride@gmail.com</a>
+        <a>Mentions légales</a>
+        <a>Avis</a>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
