@@ -5,7 +5,7 @@ const URL = "https://bac8bd94-cbae-4bad-9347-87dedf026e61.mock.pstmn.io/api/AllC
 async function loadCovoiturages(energy){
     console.log("energy choisie" + energy)
     try{
-        const response = await fetch ("covoiturages.json")
+        const response = await fetch ("testcovoiturer.json")
         const allCovoiturages = await response.json()
 
         covoiturages= allCovoiturages.filter((c) => c.energy === energy)

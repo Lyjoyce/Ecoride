@@ -11,7 +11,7 @@
       "note : 4",
         "places disponibles : 3"
       ],
-      "option": ["jeudi", "vendredi", "samedi"],
+      "options": ["jeudi", "vendredi", "samedi"],
       "answer": "jeudi",
       "energy" : "electrique"
     },
@@ -27,7 +27,7 @@
        "note : 4",
         "places disponibles : 3"
         ],
-        "option": ["jeudi", "vendredi", "samedi"],
+        "options": ["jeudi", "vendredi", "samedi"],
       "answer": "vendredi",
        "energy" : "electrique"
     },
@@ -43,7 +43,7 @@
       "note : 3",
         "places disponibles : 3"
       ],
-     "option": ["jeudi", "vendredi", "samedi"],
+     "options": ["jeudi", "vendredi", "samedi"],
     "answer": "vendredi",
      "energy" : "electrique"
   },
@@ -59,7 +59,7 @@
       "note : 4",
       "places disponibles : 3"
       ],
-     "option": ["jeudi", "vendredi", "samedi"],
+     "options": ["jeudi", "vendredi", "samedi"],
     "answer": "samedi",
     "energy" : "electrique"
   } ,
@@ -76,7 +76,7 @@
       "note : 4",
       "places disponibles : 3"
       ],
-      "option": ["jeudi", "vendredi", "samedi"],
+      "options": ["jeudi", "vendredi", "samedi"],
       "answer": "samedi",
       "energy" : "electrique"
     },
@@ -92,7 +92,7 @@
         "note : 4",
         "places disponibles : 3"
         ],
-        "option": ["jeudi", "vendredi", "samedi"],
+        "options": ["jeudi", "vendredi", "samedi"],
       "answer": "samedi",
         "energy" : "electrique"
     },
@@ -108,7 +108,7 @@
       "note : 3",
     "places disponibles : 3"
       ],
-      "option": ["jeudi", "vendredi", "samedi"],
+      "options": ["jeudi", "vendredi", "samedi"],
       "answer": "vendredi",
       "energy" : "nonelectrique"
     },
@@ -124,7 +124,7 @@
       "note : 3",
      "places disponibles : 3"
       ],
-      "option": ["jeudi", "vendredi", "samedi"],
+      "options": ["jeudi", "vendredi", "samedi"],
       "answer": "jeudi",
      "energy" : "nonelectrique"
     },
@@ -142,7 +142,7 @@
         "note : 4",
         "places disponibles : 3"
         ],
-       "option": ["jeudi", "vendredi", "samedi"],
+       "options": ["jeudi", "vendredi", "samedi"],
       "answer": "jeudi",
         "energy" : "nonelectrique"
     }

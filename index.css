@@ -165,11 +165,38 @@ input{
 }
 .card{
     margin-top: 10px;
-    height: 220px;
+    height: 200px;
     width: 300px;
     background-color: #98c433;
     border-radius: 5px;
     padding-top: 5px;
+}
+.dep{
+    height: 30px;
+    width: 280px;
+    background-color: #260401;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+
+}
+.arrived{
+    height: 30px;
+    width: 280px;
+    background-color: #260401;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
 }
 .rod{
     height: 30px;
@@ -193,6 +220,7 @@ input{
     cursor: pointer;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 2px;
 }
 .half-rod_gp{
