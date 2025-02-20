@@ -1,0 +1,258 @@
+body{ 
+    font-family: 'Franklin Gothic Medium','Times New Roman', Times, serif sans-serif;
+}
+
+body{
+    max-width: 320px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+header{
+    width: 320px;
+    background-color: #260401;
+}
+.btn_menu{
+    background-color: #98c433;
+    margin-left: 80%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.icon_menu{
+    height: 20px;
+    width: 20px;
+}
+.logo_ecoride{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+}
+nav{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    width: 250px;
+    height: 30px;
+    margin-left:35px;
+    background-color: #260401;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px #639e3f;
+    position:absolute;
+    margin-top: -15px;
+}
+a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.ahome{
+    color: white;
+}
+.arrow_back{
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    color: white;
+}
+.alogin{
+    background-color: white;
+    color: #260401;
+}
+main{
+    padding: 10px;
+    background-color: #639e3f;
+}
+
+input{
+    cursor: pointer;
+}
+.card{
+    margin-top: 20px;
+    height: 500px;
+    width: 300px;
+    background-color: #98c433;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.rod{
+    height: 50px;
+    width: 280px;
+    background-color: #260401;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+.rod_support{
+    height: 50px;
+    width: 260px;
+    background-color: #260401;
+    margin-top: -200px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.search{
+    width: 250px;
+    height: 30px;
+    border-radius: 100px;
+    background: #ff3e3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+}
+.form_paraph{
+    margin-left: 20px;
+}
+.formlink{
+    color: black;
+    text-decoration-line: underline;
+}
+.mdp_oublie{
+    width: 130px;
+    height: 20px;
+    padding: 10px;
+    border: solid 2px #639e3f;
+    border-radius: 70px;
+    margin: 20px;
+    background-color:#260401;
+}
+.mdp_oublie :hover{
+   text-decoration: underline;
+}
+.card_info{
+    margin-top: 100px;
+    height: 120px;
+    width: 300px;
+    background-color: #98c433;
+    border-radius: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rod_infoplus{
+    height: 30px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: #26116A;
+    color: white;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    padding: 20px;
+    background-color: #260401;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+  header{
+    min-width: 768px;
+  }
+.logo_ecoride{
+    margin-left: 35%;
+}
+.btn_menu{
+    margin-left: 90%;
+}
+nav{
+    width: 700px;
+}
+.alogin{
+    padding: 2px;
+}
+.card{
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rod{
+    width: 700px;
+}
+.rod_support{
+    height: 50px;
+    width: 260px;
+    background-color: #260401;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.search{
+    width: 250px;
+    height: 30px;
+    border-radius: 100px;
+    background: #ff3e3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+}
+.icon-search{
+    height: 25px;
+    color: black;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.mdp_oublie{
+    width: 130px;
+    height: 20px;
+    padding: 2px;
+    border: solid 2px #260401;
+    border-radius: 70px;
+    padding: 5px;
+    margin: 20px;
+}
+.half-rod_gp{
+    width: auto;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.half-rod{
+    width: 350px;
+}
+.rod_support{
+    margin-top: 20px;
+    width: auto;
+}
+.card_info{
+    width: auto;
+    height: 150px;
+}
+}
