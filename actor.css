@@ -76,6 +76,9 @@ main{
 input{
     cursor: pointer;
 }
+.checked{
+    cursor: pointer;
+}
 .card{
     margin-top: 20px;
     height: 400px;
