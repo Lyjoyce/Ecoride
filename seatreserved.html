@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person">
+    <title>Ecoride presentation</title>
+</head>
+
+<body>
+    <header>
+        <div class="dropdown btn_menu">
+            <button class="dropbtn">
+                <img src="icons/icon_menu.png" class="icon_menu" alt="icon_menu">
+            </button>
+            <div class="dropdown-content">
+                <a href="details.html">covoiturages</a>
+                <a href="contact.htm">contact</a>
+                <a href="login.html">connection</a>
+                <a href="login.html">déconnection</a>
+            </div>
+        </div>
+
+        <img src="images/logo_ecoride.png" class="logo_ecoride" alt="logo_ecoride">
+
+        <nav>
+            <a href="index.html" class="ahome">Home</a>
+            <a href="register.html" class="acreer_uncompte">Créer un compte</a>
+            <a href="login.html" class="alogin">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>VALIDATION</h1>
+
+        <p id="seat1"></p>
+        <button onclick="mySeat1()">SEAT1 : 12 crédits</button>
+        <p id="12pay1"></p>
+
+        <p id="seat2"></p>
+        <button onclick="mySeat2()">SEAT2 : 12 crédits</button>
+        <p id="12pay2"></p>
+
+        <p id="seat3"></p>
+        <button onclick="mySeat3()">SEAT3 : 12 crédits</button>
+        <p id="12pay3"></p>
+
+
+        <h2>Crédit confirmation</h2>
+        <p>Confirmer le credit:</p>
+
+        <input id="id12" type="number" min="12" max="12" required>
+        <button onclick="checkCredits()">OK</button>
+        <p id="checkPrice"></p>
+
+        <h2>Ticket de confirmation</h2>
+
+        <input type="emailseat1" placeholder="votre email seat1" required>
+        <p id="carloopseat"></p>
+
+        <h1>ANNULER SEAT </h1>
+
+        <p id="seat1re"></p>
+        <button onclick="mySeat1re()">ANNULER SEAT1 : -12 crédits</button>
+        <p id="12pay1re"></p>
+
+        <p id="seat2re"></p>
+        <button onclick="mySeat2re()">ANNULER SEAT2 : -12 crédits</button>
+        <p id="12pay2re"></p>
+
+        <p id="seat3re"></p>
+        <button onclick="mySeat3re()">ANNULER SEAT3 : -12 crédits</button>
+        <p id="12pay3re"></p>
+
+        <h2>Rembourser Crédit </h2>
+        <p>Annuler le credit:</p>
+
+        <input id="id-12" type="number" min="-12" max="-12" required>
+        <button onclick="checkReCredits()">OK</button>
+        <p id="annulerPrice"></p>
+
+    </main>
+
+    <footer>
+        <a>ecoride@gmail.com</a>
+        <a>Mentions légales</a>
+        <a>Avis</a>
+    </footer>
+
+    <script src="seatreserved.js"></script>
+</body>
+
+</html>
