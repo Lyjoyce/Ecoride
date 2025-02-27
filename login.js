@@ -18,13 +18,10 @@ function loginActor(){
     }
 }
 
-
-
-
-/*function checkAuth(){
+function checkAuth(){
     const isAuthenticated =localStorage.getItem("isAuthenticated")
     if(isAuthenticated !== "true"){
         alert("Veuillez vous connecter") 
         window.location.href="login.html"
     }
-}*/
+}

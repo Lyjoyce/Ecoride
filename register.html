@@ -10,10 +10,15 @@
 
 <body>
 
-    
-
-
         <header>
+            <div class="appbar">
+                <div class="actorname-menu">
+                    <span id="actorname-display"></span>
+                    <button id="logout-btn">Se déconnecter</button>
+                </div>
+                <button type="button" class="ecoriders" onclick="ecoriders()">Ecoriders</button>
+            </div>
+
 
             <button class="btn_menu">
                 <img src="icons/icon_menu.png" class="icon_menu" alt="icon_menu">
@@ -50,7 +55,7 @@
                     <div class="rod">
                         <label for="password"></label>
                         <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Create password"
-                            minlength="8" required>
+                            required>
                     </div>
                     
 

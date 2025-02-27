@@ -17,7 +17,50 @@ header{
     width: 320px;
     background-color: #260401;
 }
-
+.appbar{
+    max-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:#639e3f;
+    color: black;
+}
+.actorname-menu{
+    display: flex;
+    align-items: center;
+}
+#actorname-display{
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bolder;
+}
+#logout-btn{
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+#logout-btn:hover{
+    background-color:#260401;
+    color: white;
+}
+.ecoriders{
+    background-color: #639e3f;
+    border-radius: 5px;
+    border: solid 1px #260401;
+    box-shadow: 0 1px 0 0 ;
+    cursor: pointer;
+}
 .btn_menu{
     background-color: #98c433;
     margin-left: 75%;
