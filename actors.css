@@ -128,8 +128,50 @@ a{
     color: white;
 }
 main{
+    width: 320px;
     padding: 10px;
     background-color: #639e3f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-passager{
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+    background-color: #98c433;
+    border-radius: 5px;
+    padding-bottom: px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+alert {
+    padding: 2px;
+    background-color: #ff3e3e;
+    color: black;
+  }
+  closebtn {
+    margin-left: 5px;
+    color: white;
+    font-size: 10px;
+    line-height: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  closebtn:hover {
+    color: black;
+  }
+.card-conducteur{
+    margin-top: 150px;
+    height: 400px;
+    width: 300px;
+    background-color: #98c433;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .column{
     margin: 20px;
@@ -143,7 +185,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -5px;
 }
 .search_my_itinerary{
     width: 100px;
@@ -154,7 +195,17 @@ main{
     display: flex;
     justify-content: center;
 }
-
+.card-voiture{
+    margin-top: 600px;
+    height: 300px;
+    width: 300px;
+    background-color: #98c433;
+    border-radius: 5px;
+    padding-bottom: px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 label{
     display: flex;
     justify-content:center ;
@@ -170,17 +221,7 @@ input{
     display: flex;
     flex-direction: column;
 }
-.card{
-    margin-top: 30px;
-    height: 200px;
-    width: 300px;
-    background-color: #98c433;
-    border-radius: 5px;
-    padding-top: 5px;
-}
-.seat{
-    margin-top: 20px;
-}
+
 .halfrod_info{
     height: 30px;
     width: 100px;
@@ -216,17 +257,7 @@ input{
     justify-content: center;
     padding: 2px;
 }
-.card{
-    margin-top: 10px;
-    height: 400px;
-    width: 300px;
-    background-color: #98c433;
-    border-radius: 5px;
-    padding-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .rod_support{
     height: 50px;
     width: 260px;
@@ -268,7 +299,7 @@ input{
     align-items: center;
 }
 .card_details{
-    height: 300px;
+    height: 200px;
     width: 300px;
     margin-top: 10px;
     background-color: #98c433;
@@ -286,6 +317,7 @@ input{
     padding: 10px;
     border-radius: 5px;
     font-size: 12px;
+    margin-bottom: 5px;
 }
 .car_energie{
     width:250px;
@@ -293,6 +325,8 @@ input{
     color: white;
     padding: 10px;
     border-radius: 5px;
+    font-size: 12px;
+
 }
 #result{
     height: 40px;
