@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="conducteur.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person">
-    <title>Covoitureur Ecoride</title>
+    <title>Conducteur</title>
 </head>
 
 <body>
@@ -36,15 +36,15 @@
         <section class="formulaire">
             <div class="card">
                 <div class="display">
-                    <img src="images/conducteur_eliot.png" class="search_my_itinerary" alt="image voiture">
+                    <img src="images/img_actor/conducteur_eliotcool.png" class="search_my_itinerary" alt="image conducteur eliotcool">
                     <div class="column">
                         <div class="halfrod_info" id="places"></div>
                         <div class="halfrod_info" id="credits"></div>
                     </div>
                 </div>
                 <div class="rod">
-                    <label for="pseudo">Pseudo</label>
-                    <input type="text" id="pseudo" name="pseudo">
+                    <label for="actor-id">firstname</label>
+                    <input type="text" id="actor-id" name="actor-id">
                 </div>
                 <div class="rod">
                     <label for="statut">Statut</label>
@@ -52,11 +52,11 @@
                 </div>
                 <div class="half-rod">
                     <label for="note">Note sur 5</label>
-                    <input type="number" id="note" name="note" min="0" max="5" placeholder="note">
+                    <input type="number" name="note" min="1" max="5" placeholder="note">
                 </div>
                     <div class="half-rod">
                         <label for="price">Prix</label>
-                        <input type="number" id="price" name="price" min="3" max="10" placeholder="price">
+                        <input type="number" name="price" min="3" max="15" placeholder="price">
                     </div>
 
             </div>
@@ -64,15 +64,15 @@
             <div class="card_info">
                 <div class="rod">
                     <label for="depart-datetime-local">départ</label>
-                    <input type="datetime-local" id="depart-datetime-local" name="depart-datetime-local">
+                    <input type="datetime-local" name="depart-datetime-local">
                 </div>
                 <div class="rod">
                     <label for="arrived-datetime-local">arrivée</label>
-                    <input type="datetime-local" id="arrived-datetime-local" name="arrived-datetime-local">
+                    <input type="datetime-local" name="arrived-datetime-local">
                 </div>
                 <div class="half-rod">
-                    <label for="electric">électrique</label>
-                    <input type="checkbox" id="electric" name="electric">
+                    <label for="ecologique">électrique</label>
+                    <input type="checkbox" id="ecologique" name="ecologique">
                 </div>
             </div>
 
@@ -82,24 +82,24 @@
                 <h3>Préférences du conducteur</h3>
                     <div class="rod">
                         <label for="animal">animal</label>
-                        <input type="checkbox" id="animal" name="animal" class="checkbox">
+                        <input type="checkbox" name="animal" class="checkbox">
                     </div>
                     <div class="rod">
                         <label for="noanimal">noanimal</label>
-                        <input type="checkbox" id="noanimal" name="noanimal"  class="checkbox">
+                        <input type="checkbox" name="noanimal"  class="checkbox">
                     </div>
                     <div class="rod">
-                        <label for="smoke">smoke</label>
-                        <input type="checkbox" id="smoke" name="smoke"  class="checkbox">
+                        <label for="fumeur">fumeur</label>
+                        <input type="checkbox"name="fumeur" class="checkbox">
                     </div>
                     <div class="rod">
-                        <label for="nosmoke">nosmoke</label>
-                        <input type="checkbox" id="nosmoke" name="nosmoke" class="checkbox">
+                        <label for="nonfumeur">non fumeur</label>
+                        <input type="checkbox" name="nonfumeur" class="checkbox">
                     </div>
             </div>
             <div class="rod_support">
-                <button   class="search">Lancer la recherche </button>
-                <img src="icons/icon_search_black.png" class="icon-search" alt="icon search">
+                <button   class="search">Démarrer un covoiturage </button>
+
             </div>
             
         </section>
