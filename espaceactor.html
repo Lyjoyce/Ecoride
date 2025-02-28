@@ -43,6 +43,43 @@
     </header>
 
     <main>
+
+        <form id="login-form" class="formulaire">
+            <div class="card">
+                <div class="half-rod">passager
+                    <label for="passager"></label>
+                    <input type="checkbox" checked id="passager" name="passager">
+                </div>
+                <div class="rod">
+                    <label for="login-firstname"></label>
+                    <input type="text" id="login-firstname" name="firstname" placeholder="Your firstname">
+                </div>
+                <div class="rod"><label for="login-lastname"></label>
+                    <input type="text" id="login-lastname" name="lastname" placeholder="Your lastname" required>
+                </div>
+                <div class="rod">
+                    <label for="login-email"></label>
+                    <input type="email" id="login-email" placeholder="Your email" pattern=".+@example\.com"
+                        required>
+                </div>
+                <div class="rod">
+                    <label for="telephone"></label>
+                    <input type="number" placeholder="telephone" name="telephone"
+                        required>
+                </div>
+            </div>
+
+        </form>
+        <div class="halfrod_info">crédits</div>
+        <div class="rod">conducteur
+            <label for="conducteur"></label>
+            <input type="checkbox" checked id="voiture" name="conducteur">
+
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                Attention Veuillez remplir un formulaire voiture
+            </div>
+        </div>
         <div class="card">
             <div class="rod">
                 <input type="text" id="immatriculation" name="immatriculation" placeholder="immatriculation">
@@ -109,21 +146,24 @@
             <div class="card">
                 <div class="rod_presentation_itinerary">Filtres</div>
                 <div class="display">
-                    <img src="images/conducteur_eliot.png" class="search_my_itinerary" alt="image voiture">
+                    <img src="images/img_actor/conducteur_eliot.png" class="search_my_itinerary" alt="image voiture">
                     <div class="column">
-                        <div class="halfrod_info" id="places"></div>
-                        <div class="halfrod_info" id="credits"></div>
+                        <div class="halfrod_info" id="places">place</div>
+                        <div class="halfrod_info" id="credits">crédit</div>
                     </div>
                 </div>
                 <div class="rod">
-                    <label for="pseudo">Pseudo</label>
-                    <input type="text" id="pseudo" name="pseudo">
+                    <label for="firstname">firstname</label>
+                    <input type="text" id="firstname" name="firstname">
                 </div>
                 <div class="rod">
-                    <label for="disponible">disponible</label>
-                    <input type="number" id="disponible" name="disponible" min="1" max="3"
+                    <label for="disponible">Seatdispo</label>
+                    
+                    <input type="number" id="seatdispo" name="seatdispo" min="1" max="3"
                         placeholder="place disponible">
                 </div>
+                <div></div>
+                <div></div>
                 <div class="half-rod">
                     <label for="note">Note sur 5</label>
                     <input type="number" id="note" name="note" min="1" max="5" placeholder="note">
@@ -152,27 +192,21 @@
 
         <form id="question-form">
 
-                <p class="question"></p>
-                <label><input type="radio" name="q1" value="seatA">seat</label>
+            <p class="question"></p>
+            <label><input type="text" name="q1" value="seatone">seatone</label>
 
-                <p class="question"></p>
-                <label><input type="radio" name="q1" value="seatB">seat</label>
-                <p class="question"></p>
-                <label><input type="radio" name="q1" value="seatC">seat</label>
-            </form>
-        
-                <div class="calculate-places">
-                    
-                    <button id="demo1" type="number" min="1" max="3"></button>
-                    <button id="demo2" type="number" min="1" max="1"></button>
-                </div>
+            <p class="question"></p>
+            <label><input type="text" name="q1" value="seattwo">seattwo</label>
+            <p class="question"></p>
+            <label><input type="text" name="q1" value="seatthree">seatthree</label>
+        </form>
 
-            <div class="rod_support">
-                <button type="button" onclick="disponible()" class="search">Submit</button>
-            </div>
-            <div id="result"></div>
+        <div class="rod_support">
+            <button type="button" onclick="disponible()" class="search">Submit</button>
+        </div>
+        <div id="result"></div>
 
-       
+
         <div class="card_maj">
             <div class="rod">
                 <label for="crédit demandé">crédit demandé
@@ -182,14 +216,11 @@
                 <label for="confirmation crédit demandé">confirmation crédit demandé
                     <input type="number" min="2" max="16"> </label>
             </div>
-            <div class="column">
-                <div class="halfrod_info">crédits</div>
-                <div class="halfrod_info">place</div>
-            </div>
-        </div>
-        
 
-        
+        </div>
+
+
+
     </main>
 
     <footer>
@@ -197,7 +228,7 @@
         <a>Mentions légales</a>
         <a>Avis</a>
     </footer>
-    
+
     <script src="espaceperso.js"></script>
 </body>
 
