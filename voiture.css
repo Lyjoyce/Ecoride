@@ -4,14 +4,11 @@ body{
 
 body{
     max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: black;
+    background-color:#639e3f;
 }
 header{
     width: 320px;
@@ -128,8 +125,11 @@ a{
     color: white;
 }
 main{
-    padding: 10px;
+    margin: 4px;
+    padding: 2px;
     background-color: #639e3f;
+    width: 320px;
+    height: auto;
 }
 .column{
     margin: 20px;
@@ -143,12 +143,12 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -5px;
+    margin-top: 5px;
 }
 .search_my_itinerary{
     width: 100px;
     height: 100px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .display{
     display: flex;
@@ -178,9 +178,7 @@ input{
     border-radius: 5px;
     padding-top: 5px;
 }
-.seat{
-    margin-top: 20px;
-}
+
 .halfrod_info{
     height: 30px;
     width: 100px;
@@ -204,29 +202,8 @@ input{
     justify-content: center;
     padding: 2px;
 }
-.half-rod{
-    height: 30px;
-    width: 200px;
-    background-color: #260401;
-    color: white;
-    margin-top: 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 2px;
-}
-.card{
-    margin-top: 10px;
-    height: 400px;
-    width: 300px;
-    background-color: #98c433;
-    border-radius: 5px;
-    padding-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
+
 .rod_support{
     height: 50px;
     width: 260px;
@@ -267,31 +244,14 @@ input{
     flex-direction: column;
     align-items: center;
 }
-.card_details{
-    height: 300px;
-    width: 300px;
-    margin-top: 10px;
-    background-color: #98c433;
-    border-radius: 5px;
-    padding-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-.conducteur_avis{
-    width:250px;
-    background-color: #260401;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 12px;
-}
+
+
 .car_energie{
-    width:250px;
+    width:300px;
+    height:auto ;
     background-color: #260401;
     color: white;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 }
 #result{

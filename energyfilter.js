@@ -103,7 +103,7 @@ function showQuestion() {
         console.log(questions)
         const questionData = questions[currentQuestionIndex]
         console.log( "question data" + questionData)
-        const questionContainer= document.getElementById("quiz-container")
+        const questionContainer= document.getElementById("energy-container")
 
         questionContainer.innerHTML = `
         <div class"question">

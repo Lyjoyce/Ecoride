@@ -5,9 +5,7 @@ body{
 body{
     max-width: 320px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
+    margin: 0px;
     margin-bottom: 0px;
     display: flex;
     flex-direction: column;
@@ -40,7 +38,7 @@ nav{
     font-size: medium;
     width: 250px;
     height: 30px;
-    margin-left:35px;
+    margin-left:0px;
     background-color: #260401;
     display: flex;
     justify-items: center;
@@ -131,18 +129,7 @@ input{
     color: black;
     text-decoration-line: underline;
 }
-.mdp_oublie{
-    width: 130px;
-    height: 20px;
-    padding: 10px;
-    border: solid 2px #639e3f;
-    border-radius: 70px;
-    margin: 20px;
-    background-color:#260401;
-}
-.mdp_oublie :hover{
-   text-decoration: underline;
-}
+
 .card_info{
     margin-top: 100px;
     height: 120px;
@@ -247,7 +234,6 @@ nav{
 .icon-search{
     height: 25px;
     color: black;
-    margin-left: -30px;
     cursor: pointer;
 }
 .mdp_oublie{
