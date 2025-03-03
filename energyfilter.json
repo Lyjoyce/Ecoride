@@ -1,6 +1,6 @@
 [
     {
-      "question": 
+      "carpooling": 
       ["conducteur : Tom Zen",
       "immatriculation : AA-001-AA",
       "date 1ere : 01/01/2024",
@@ -30,7 +30,7 @@
       "answer": "ecologique"
     },
     {
-      "question": ["De: Paris, 75015 gare Montparnasse",
+      "carpooling": ["De: Paris, 75015 gare Montparnasse",
        "A: Deauville, 14200 gare de Deauville-Trouville ",
        "daydepart : vendredi :19h00",
        "dayarrivee : vendredi : 22h30",
@@ -46,7 +46,7 @@
         "energy" : "electrique"
     },
     {
-      "question": [" De :Paris, 75015 gare Montparnasse",
+      "carpooling": [" De :Paris, 75015 gare Montparnasse",
       "A: Amboise, 37400 gare de Amboise",
       "daydepart : vendredi :O7h00",
       "dayarrivee : vendredi : 10h30",

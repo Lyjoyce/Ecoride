@@ -56,12 +56,12 @@ document.addEventListener("DOMContentLoaded", function(){
 document.querySelectorAll(".energy-btn").forEach((btn) =>{
     btn.addEventListener("click", function () {
         const level = btn.getAttribute("data-level")
-        loadCarpoolings(level)
+        loadQuestions(level)
     })
 })
 
-let currentCarpoolingIndex =0
-let carpoolings = []
+let currentQuestionIndex =0
+let questions = []
 let selectedEnergy = ""
 
 //Chargement 
@@ -69,19 +69,19 @@ let selectedEnergy = ""
 const URL = "https://ccf1fac0-355c-4948-9a49-66a89235a16f.mock.pstmn.io/api/FiltersEnergy"
 //const URL= "https://cae6ace7-b8ff-4b20-8f36-3095a31d59e3.mock.pstmn.io/api/Filter"
 
-async function loadCarpoolings(energy){
+async function loadQuestions(energy){
     try{
         const response = await fetch("energyfilter.json")
 
         if (!response.ok){
             throw new Error(`Erreur HTTP: ${response.status}`)
         }
-        const allCarpoolings = await response.json()
+        const allQuestions = await response.json()
 
 //Filtres
-        carpoolings= allCarpoolings.filter((c) => c.energy === energy)
+        questions= allQuestions.filter((q) => q.energy === energy)
         selectedEnergy = energy
-        currentCarpoolingIndex = 0
+        currentQuestionIndex = 0
 
         startQuiz()
     }
@@ -94,23 +94,23 @@ async function loadCarpoolings(energy){
 function startQuiz() {
     document.querySelector(".energy-selection").classList.add("hidden")
     document.getElementById("energy-container").classList.remove("hidden")
-    showCarpooling()
+    showQuestion()
 }
 
 //Afficher les données
-function showCarpooling() {
-    if(currentCarpoolingIndex < carpoolings.length) {
-        console.log(carpoolings)
-        const carpoolingData = carpoolings[currentCarpoolingIndex]
-        console.log( "carpooling data" + carpoolingData)
-        const carpoolingContainer= document.getElementById("energy-container")
+function showQuestion() {
+    if(currentQuestionIndex < questions.length) {
+        console.log(questions)
+        const questionData = questions[currentQuestionIndex]
+        console.log( "question data" + questionData)
+        const questionContainer= document.getElementById("energy-container")
 
-        carpoolingContainer.innerHTML = `
-        <div class"carpooling">
-        <p> ${carpoolingData.carpooling} <p/>
+        questionContainer.innerHTML = `
+        <div class"question">
+        <p> ${questionData.question} <p/>
         <div/>
         <form id="quiz-form">
-         ${carpoolingData.options
+         ${questionData.options
          .map(
                 (option, index)=> `
                 <label class="option"> 
@@ -140,18 +140,18 @@ function submitAnswer(){
     }
     //Vérifier 
     checkAnswer(selectAnswer)
-    nextCarpooling()
+    nextQuestion()
 }
 
-function nextCarpooling(){
-    currentCarpoolingIndex++
-    showCarpooling()
+function nextQuestion(){
+    currentQuestionIndex++
+    showQuestion()
 }
 
 // Vérifier si la réponse est correcte
 function checkAnswer(selectAnswer) {
-    const currentCarpooling = carpoolings[currentCarpoolingIndex]
-    if (selectAnswer === currentCarpooling.answer){
+    const currentQuestion = questions[currentQuestionIndex]
+    if (selectAnswer === currentQuestion.answer){
         incrementScore()
     }
 }
