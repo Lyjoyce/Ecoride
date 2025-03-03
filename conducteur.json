@@ -1,4 +1,4 @@
-{"firstname":"Tom",
+[{"firstname":"Tom",
 	"lastname":"Zen",
 	"email":"tom@hotmail.com",
 	"password":"1234",
@@ -18,4 +18,27 @@
 	"seatthree":"1",
 	"nbplace":"3",
 	"credit":"18"
+},
+{"firstname":"Zoe",
+	"lastname":"Cool",
+	"email":"zoe@hotmail.com",
+	"password":"",
+	"telephone":"0000000000",
+	"birthday":"01/01/2001",
+	"note":"4",
+	"avis":"bon",
+	"immatriculation":"DD_004_DD",
+	"date1ereimmatriculation":"01/01/2023",
+	"marque":"Peugeot208",
+	"ecologique":"nonecologique",
+	"preferences":"autre",
+	"animal":"animal",
+    "nosmoke":"nosmoke",
+	"seatone":"1",
+	"seattwo":"1",
+	"seatthree":"1",
+	"nbplace":"3",
+	"credit":"18"
 }
+
+]
