@@ -39,6 +39,27 @@
 	"seatthree":"1",
 	"nbplace":"3",
 	"credit":"18"
+},
+{  "firstname":"Rose",
+	"lastname":"Park",
+	"email":"rose@hotmail.com",
+	"password":"",
+	"telephone":"0000000000",
+	"birthday":"01/01/2002",
+	"note":"4",
+	"avis":"bon conducteur, prudent",
+	"immatriculation":"BB_002_BB",
+	"date1ereimmatriculation":"01/01/2024",
+	"marque":"BMWi5",
+	"ecologique":"ecologique",
+	"preferences":"autre",
+	"animal":"animal",
+    "nosmoke":"nosmoke",
+	"seatone":"1",
+	"seattwo":"1",
+	"seatthree":"1",
+	"nbplace":"3",
+	"credit":"18"
 }
 
 ]
