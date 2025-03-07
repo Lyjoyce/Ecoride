@@ -1,0 +1,42 @@
+[{
+    "conducteur":"Tom Zen",
+    "immatriculation": "AA_001_AA",
+    "date1ereimmatriculation" : "01/01/2024",
+    "marque" :"BMW",
+    "modele" :"BMWi5",
+    "couleur" : "noir",
+    "energy" : "electrique",
+    "ecologique" :"ecologique"
+
+},
+    {
+        "conducteur":"Laure Pop",
+        "immatriculation": "BB_002_BB",
+        "date1ereimmatriculation" : "01/02/2024",
+        "marque" :"Fiat",
+        "modele" :"Fiat600",
+        "couleur" : "blanc",
+        "energy" : "electrique",
+        "ecologique" :"ecologique"
+    },
+    {
+        "conducteur":"Rose Mai",
+        "immatriculation": "CC_003_CC",
+        "date1ereimmatriculation" : "01/03/2024",
+        "marque" :"Honda",
+        "modele" :"HondaeNY1",
+        "couleur" : "rouge",
+        "energy" : "electrique",
+        "ecologique" :"ecologique"
+    },
+    {
+        "conducteur":"Eliot Cool",
+        "immatriculation": "DD_004_DD",
+        "date1ereimmatriculation" : "01/04/2024",
+        "marque" :"Peugeot",
+        "modele" :"Peugeot208",
+        "couleur" : "vert",
+        "energy" : "essence",
+        "ecologique" :"nonecologique"
+    }
+]
