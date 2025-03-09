@@ -4,8 +4,9 @@ body{
 
 body{
     max-width: 320px;
-    height: auto;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
     flex-direction: column;
@@ -16,29 +17,100 @@ header{
     width: 320px;
     background-color: #260401;
 }
+.appbar{
+    max-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:#639e3f;
+    color: black;
+}
+.actorname-menu{
+    display: flex;
+    align-items: center;
+}
+#actorname-display{
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bolder;
+}
+#logout-btn{
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+#logout-btn:hover{
+    background-color:#260401;
+    color: white;
+}
+
 .btn_menu{
     background-color: #98c433;
-    margin-left: 80%;
-    margin-top: 5px;
+    margin-left: 75%;
+    margin-top: 10px;
     cursor: pointer;
 }
 .icon_menu{
     height: 20px;
     width: 20px;
 }
+.dropbtn {
+    background-color: white;
+    border: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+  }
+
+  .dropdown-content a:hover {
+    background-color:black;
+    color: white;
+}
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+  .dropdown:hover .dropbtn {
+    background-color: #98c433;
+}
 .logo_ecoride{
     width: 200px;
     height: 200px;
     display: flex;
     justify-content: center;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 nav{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     width: 250px;
     height: 30px;
-    margin-left:0px;
+    margin-left:35px;
     background-color: #260401;
     display: flex;
     justify-items: center;
@@ -53,44 +125,136 @@ a{
     color: white;
     text-decoration: none;
 }
-.ahome{
-    color: white;
-}
 .arrow_back{
     width: 20px;
     height: 20px;
     margin-top: -10px;
     color: white;
 }
-.alogin{
-    background-color: white;
-    color: #260401;
-}
 main{
+    width: 320px;
     padding: 10px;
     background-color: #639e3f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-input{
-    cursor: pointer;
-}
-.checked{
-    cursor: pointer;
-}
-.card{
-    margin-top: 20px;
-    height: 400px;
+.card-passager{
+    margin-top: 30px;
+    height: 300px;
     width: 300px;
     background-color: #98c433;
     border-radius: 5px;
-    padding-top: 5px;
+    padding-bottom: px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.alert {
+    padding: 2px;
+    background-color: #ff3e3e;
+    color: black;
+  }
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+    line-height: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+ .closebtn:hover {
+    color: black;
+  }
+.card-conducteur{
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    background-color: #98c433;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.column{
+    margin: 20px;
+}
+.rod_presentation_itinerary{
+    width: 300px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #26116A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_my_itinerary{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+.display{
+    display: flex;
+    justify-content: center;
+}
+.card-voiture{
+    margin-top: 20px;
+    height: 300px;
+    width: 300px;
+    background-color: #98c433;
+    border-radius: 5px;
+    padding-bottom: px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    padding-right: 4px;
+    background-color:#260401;
+    color: white;
+}
+input{
+    cursor: pointer;
+}
+.checkbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.halfrod_info{
+    height: 30px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #26116A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .rod{
-    height: 50px;
+    height: 30px;
     width: 280px;
     background-color: #260401;
     color: white;
     margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+.half-rod{
+    height: 30px;
+    width: 200px;
+    background-color: #260401;
+    color: white;
+    margin-top: 20px;
     margin-left: 10px;
     cursor: pointer;
     display: flex;
@@ -102,15 +266,63 @@ input{
     height: 50px;
     width: 260px;
     background-color: #260401;
-    margin-top: -200px;
+    margin-top: 20px;
     margin-left: 20px;
-    margin-bottom: 0px;
     display: flex;
     align-items: center;
     justify-items: center;
     justify-content: center;
 }
-.search{
+
+.ablack{
+    color: black;
+}
+
+.card_preferences{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 230px;
+    width: 300px;
+    background-color: #260401;
+    color: white;
+    border: #98c433 solid 2px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_details{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 300px;
+    background-color: #98c433;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.conducteur_avis{
+    width:250px;
+    background-color: #260401;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.car_energie{
+    width:250px;
+    background-color: #260401;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.submit{
     width: 250px;
     height: 30px;
     border-radius: 100px;
@@ -119,38 +331,18 @@ input{
     justify-content: center;
     align-items: center;
     color: black;
+    font-size: large;
     cursor: pointer;
-    margin-top: 10px;
 }
-.form_paraph{
+#result{
+    height: 40px;
+    width: 260px;
+    margin-top: 20px;
     margin-left: 20px;
-}
-.formlink{
-    color: black;
-    text-decoration-line: underline;
-}
-
-.card_info{
-    margin-top: 100px;
-    height: 120px;
-    width: 300px;
-    background-color: #98c433;
-    border-radius: 0px;
-    padding-bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.rod_infoplus{
-    height: 30px;
-    width: 130px;
-    border-radius: 10px;
     background-color: #26116A;
     color: white;
-    font-size: medium;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 footer{
     font-family: 'Times New Roman', Times, serif;
@@ -163,27 +355,12 @@ footer{
     align-items: center;
 }
 
-.alert {
-    padding: 2px;
-    background-color: #ff3e3e;
-    color: black;
-  }
-  .closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .closebtn:hover {
-    color: black;
-  }
-
 @media only screen and (min-width: 768px) {
   body {
     min-width: 768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   header{
     min-width: 768px;
@@ -197,12 +374,10 @@ footer{
 nav{
     width: 700px;
 }
-.alogin{
-    padding: 2px;
-}
 .card{
     width: auto;
-    height: 300px;
+    height: 400px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -210,47 +385,30 @@ nav{
 .rod{
     width: 700px;
 }
-.rod_support{
-    height: 50px;
-    width: 260px;
-    background-color: #260401;
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-}
-.search{
-    width: 250px;
-    height: 30px;
-    border-radius: 100px;
-    background: #ff3e3e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    cursor: pointer;
-}
-.icon-search{
-    height: 25px;
-    color: black;
-    cursor: pointer;
-}
-.mdp_oublie{
-    width: 130px;
-    height: 20px;
-    padding: 2px;
-    border: solid 2px #260401;
-    border-radius: 70px;
-    padding: 5px;
-    margin: 20px;
-}
-.half-rod_gp{
+.card_preferences{
     width: auto;
+}
+.card_details{
+    width: auto;
+}
+.card_info{
+    width: auto;
+    height: 150px;
     display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.rod_presentation_itinerary{
+    width: auto;
+    height: 30px;
+}
+.rod_infoplus{
+    width: 700px;
+}
+.card_filters{
+    width: auto;
+   height: 250px;
 }
 .half-rod{
     width: 350px;
@@ -259,8 +417,12 @@ nav{
     margin-top: 20px;
     width: auto;
 }
-.card_info{
+#result{
+    height: 40px;
     width: auto;
-    height: 150px;
+    justify-content: center;
+}
+footer{
+    min-width: 768px;
 }
 }

@@ -1,3 +1,8 @@
+    function checkConducteur(){
+        onclick="this.parentElement.style.display='none';"
+        //>&times;
+    }
+    
     let y = 3;
     let x = y--;
     document.getElementById("demo1");

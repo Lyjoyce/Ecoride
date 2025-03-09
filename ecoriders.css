@@ -54,12 +54,16 @@ header{
     background-color:#260401;
     color: white;
 }
-.ecoriders{
-    background-color: #639e3f;
+.ecoriders-btn{
+    background-color: white;
+    color: #26116A;
+    font-weight: bolder;
     border-radius: 5px;
-    border: solid 1px #260401;
+    border: solid 1px #26116A;
     box-shadow: 0 1px 0 0 ;
     cursor: pointer;
+    margin-left: 50px;
+    padding: 5px;
 }
 .btn_menu{
     background-color: #98c433;
@@ -137,179 +141,26 @@ main{
     padding: 10px;
     background-color: #639e3f;
 }
-.column{
-    margin: 20px;
-}
-.rod_presentation_itinerary{
-    width: 300px;
-    height: 30px;
-    border-radius: 100px;
-    background-color: #26116A;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -5px;
-}
-.search_my_itinerary{
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
-}
-.display{
-    display: flex;
-    justify-content: center;
-}
-
-label{
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    padding-right: 4px;
-    background-color:#260401;
-    color: white;
-}
-input{
-    cursor: pointer;
-}
-.checkbox{
-    display: flex;
-    flex-direction: column;
-}
-.card{
-    margin-top: 30px;
-    height: 200px;
-    width: 300px;
-    background-color: #98c433;
-    border-radius: 5px;
-    padding-top: 5px;
-}
-.seat{
-    margin-top: 20px;
-}
-.halfrod_info{
-    height: 30px;
-    width: 100px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    background-color: #26116A;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.rod{
-    height: 30px;
-    width: 280px;
-    background-color: #260401;
-    color: white;
-    margin-top: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 2px;
-}
-.half-rod{
-    height: 30px;
-    width: 200px;
-    background-color: #260401;
-    color: white;
-    margin-top: 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 2px;
-}
-.card{
-    margin-top: 10px;
-    height: 400px;
-    width: 300px;
-    background-color: #98c433;
-    border-radius: 5px;
-    padding-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.rod_support{
+.deskworker{
+    margin-top: 50px;
     height: 50px;
-    width: 260px;
-    background-color: #260401;
-    margin-top: 20px;
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-}
-.search{
-    width: 250px;
-    height: 30px;
-    border-radius: 100px;
-    background: #ff3e3e;
+    width: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: large;
-    cursor: pointer;
+    align-items:normal;
 }
-.ablack{
-    color: black;
-}
-
-.card_preferences{
-    margin-top: 10px;
-    height: 230px;
-    width: 300px;
-    background-color: #260401;
-    color: white;
-    border: #98c433 solid 2px;
-    border-radius: 5px;
-    padding-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.card_details{
-    height: 300px;
-    width: 300px;
-    margin-top: 10px;
-    background-color: #98c433;
-    border-radius: 5px;
-    padding-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-.conducteur_avis{
-    width:250px;
-    background-color: #260401;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 12px;
-}
-.car_energie{
-    width:250px;
-    background-color: #260401;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-#result{
-    height: 40px;
-    width: 260px;
-    margin-top: 20px;
-    margin-left: 20px;
+button{
     background-color: #26116A;
     color: white;
-    display: flex;
-    align-items: center;
+    border: solid 2px white;
+    cursor: pointer;
 }
+button:hover{
+    background-color: white;
+    color: #26116A;
+    font-weight: bolder;
+}
+
 footer{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;

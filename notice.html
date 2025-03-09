@@ -40,12 +40,12 @@
             <form id="login-form" class="formulaire">
                 <div class="card">
                     <div class="rod">
-                        <label for="login-firstname"></label>
-                        <input type="text" id="login-firstname" name="firstname" placeholder="Your firstname">
+                        <label for="firstname"></label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Your firstname">
                     </div>
                     <div class="rod">
-                        <label for="login-email"></label>
-                        <input type="email" id="login-email" placeholder="Enter your email" pattern=".+@example\.com"
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Enter your email" pattern=".+@passager\.com"
                             required>
                     </div>
                     <div class="rod">
@@ -55,7 +55,8 @@
                     </div>
 
                     <div class="rod_support">
-                        <input type="submit" onclick="notice()" value="Submit" class="submit">
+                        <button type="button" onclick="writteNotice()" class="submit">Lire</button>
+                        <button type="button" onclick="addNotice()" class="submit">Confirmer</button>
                     </div>
                 </div>
             </form>
@@ -71,7 +72,7 @@
         <a>Mentions légales</a>
         <a>Avis</a>
     </footer>
-    <script src="login.js"></script>
+    <script src="notice.js"></script>
 </body>
 
 </html>

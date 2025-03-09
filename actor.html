@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="actors.css">
+    <link rel="stylesheet" href="actor.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person">
     <title>Actor</title>
@@ -57,9 +57,9 @@
                 <div class="rod"><label for="login-lastname"></label>
                     <input type="text" id="login-lastname" name="lastname" placeholder="Your lastname" required>
                 </div>
-                <div class="rod">
+                <div class="rod"> 
                     <label for="login-email"></label>
-                    <input type="email" id="login-email" placeholder="Your email" pattern=".+@example\.com" required>
+                    <input type="email" id="login-email" placeholder="Your email" pattern=".+@passager\.com" required>
                 </div>
                 <div class="rod">
                     <input type="number" placeholder="telephone" name="telephone" required>
@@ -67,15 +67,36 @@
             </div>
             <div class="rod">crédits</div>
         </form>
-
-        <div class="rod">conducteur
+<!---->
+<form id="login-form" class="formulaire">
+    <div class="card-conducteur">
+        <div class="half-rod">conducteur
             <label for="conducteur"></label>
-            <input type="checkbox" checked id="conducteur" name="conducteur">
+            <input type="checkbox" id="conducteur" name="conducteur">
+        </div>
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Attention Veuillez remplir un formulaire voiture
+        </div>
+        <div class="rod">
+            <label for="login-firstname"></label>
+            <input type="text" id="login-firstname" name="firstname" placeholder="Your firstname">
+        </div>
+        <div class="rod"><label for="login-lastname"></label>
+            <input type="text" id="login-lastname" name="lastname" placeholder="Your lastname" required>
+        </div>
+        <div class="rod"> 
+            <label for="login-email"></label>
+            <input type="email" id="login-email" placeholder="Your email" pattern=".+@conducteur\.com" required>
+        </div>
+        <div class="rod">
+            <input type="number" placeholder="telephone" name="telephone" required>
+        </div>
+    </div>
+    <div class="rod">crédits</div>
+</form>
 
-            <div class="alert">
-                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                <!--Attention Veuillez remplir un formulaire voiture-->
-            </div>
+<!---->
             <form class="formulaire">
                 <div class="card-conducteur">
                     <div class="rod_presentation_itinerary">Filtres</div>
@@ -86,10 +107,6 @@
                             <div class="halfrod_info" id="places">place</div>
                             <div class="halfrod_info" id="credits">crédit</div>
                         </div>
-                    </div>
-                    <div class="rod">
-                        <label for="firstname">firstname</label>
-                        <input type="text" id="firstname" name="firstname">
                     </div>
                     <div class="rod">
                         <label for="disponible">Seatdispo</label>
@@ -103,6 +120,7 @@
                         <label for="note">Note sur 5</label>
                         <input type="number" id="note" name="note" min="1" max="5" placeholder="note">
                     </div>
+
                     <div class="half-rod">
                         <label for="price">Prix</label>
                         <input type="number" id="price" name="price" min="3" max="20" placeholder="price">
@@ -199,7 +217,7 @@
         </form>
 
         <div class="rod_support">
-            <button type="button" onclick="disponible()" class="search">Submit</button>
+            <button type="button" onclick="disponible()" class="submit">Submit</button>
         </div>
         <div id="result"></div>
     </main>
