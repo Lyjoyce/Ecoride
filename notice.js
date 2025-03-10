@@ -27,9 +27,10 @@ function addNotice(){
 
     if(firstname===storedFirstname && email===storedEmail && notice===storedNotice){
         localStorage.setItem("isSubmit", true)
+        alert ("Merci pour votre avis")
         window.location.href="index.html"
     }else{
-        alert("Merci")
+        alert("Non je ne confirme pas")
     }
 }
 /*
