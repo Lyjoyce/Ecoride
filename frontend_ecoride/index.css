@@ -6,7 +6,6 @@ body{
     box-sizing: border-box;
     max-width: 320px;
     margin: 0;
-    padding: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
