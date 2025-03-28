@@ -14,10 +14,7 @@ body{
 .banniere-logo{
     display: flex;
     justify-content: center;
-    background-color: white;
-    color: #26116A;
     font-family: cursive;
-    border: solid 2px #98c433;
 }
 .logo_ecoride{
     width: 80px;
@@ -119,14 +116,14 @@ main{
     height: 350px;
     width: 290px;
     margin-top: 30px;
-    background-color:#639e3f;
+    background-color:#26116A;
     border-radius: 5px;
     color: white;
     display: flex;
     flex-direction: column;
 }
 h1{
-    font-size: large;
+    font-size: medium;
     margin: 10px;
 }
 
