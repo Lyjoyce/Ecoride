@@ -3,7 +3,7 @@ version: "3.8"
 services:
   db:
     image: mysql:8.4.0
-    container_name: studi-newsletter-db
+    container_name: ecoride-db
     restart: unless-stopped
     env_file:
       - .env
@@ -17,7 +17,7 @@ services:
     build:
       context: ./back-newsletter
     restart: on-failure
-    container_name: studi-newsletter-back
+    container_name: backend
     ports:
       - "8080:8080"
     depends_on:
@@ -29,9 +29,9 @@ services:
 
   front:
     build:
-      context: ./front-newsletter
+      context: ./frontend-ecoride
     restart: always
-    container_name: studi-newsletter-front
+    container_name: frontend-ecoride
     ports:
       - "80:80"
     depends_on:
