@@ -4,7 +4,6 @@ body{
 
 body{
     max-width: 320px;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
@@ -18,6 +17,77 @@ header{
     width: 320px;
     background-color: #260401;
 }
+.banniere-logo{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.logo_ecoride{
+    width: 100px;
+    height: 100px;
+}
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+  }
+
+  .dropdown-content a:hover {
+    background-color:black;
+    color: white;
+}
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #98c433;}
+  .icon_menu{
+    height: 20px;
+    width: 20px;
+}
+.dropbtn {
+    background-color: white;
+    border: none;
+  }
+nav{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    width: 250px;
+    height: 30px;
+    margin-left:35px;
+    margin-top: -15px;
+    background-color: #260401;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px #639e3f;
+    position:absolute;
+}
+a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.ahome{
+    background-color: white;
+    color: #260401;
+    padding: 2px;
+}
+
 .appbar{
     max-width: 320px;
     display: flex;
@@ -62,54 +132,7 @@ header{
     box-shadow: 0 1px 0 0 ;
     cursor: pointer;
 }
-.btn_menu{
-    background-color: #98c433;
-    margin-left: 80%;
-    margin-top: 5px;
-    cursor: pointer;
-}
-.icon_menu{
-    height: 20px;
-    width: 20px;
-}
-.logo_ecoride{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    margin-left: 20%;
-}
-nav{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
-    width: 250px;
-    height: 30px;
-    margin-left:35px;
-    background-color: #260401;
-    display: flex;
-    justify-items: center;
-    justify-content: space-around;
-    align-items: center;
-    border: solid 2px #639e3f;
-    position:absolute;
-    margin-top: -15px;
-}
-a{
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-}
-.arrow_back{
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    color: white;
-}
-.aregister{
-    background-color: white;
-    color: #260401;
-    padding: 2px;
-}
+
 main{
     padding: 10px;
     background-color: #639e3f;
