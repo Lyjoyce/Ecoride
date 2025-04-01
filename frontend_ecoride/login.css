@@ -1,27 +1,35 @@
 body{ 
     font-family: 'Franklin Gothic Medium','Times New Roman', Times, serif sans-serif;
 }
-
 body{
+    box-sizing: border-box;
     max-width: 320px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: black;
+}
+header{
+    width: 320px;
+    background-color: #260401;
+}
+.banniere-logo{
+    display: flex;
+    justify-content: center;
+}
+.logo_ecoride{
+    width: 100px;
+    height: 100px;
 }
 .appbar{
     max-width: 320px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     background-color:#639e3f;
     color: black;
+    margin-top: 10px;
 }
 .actorname-menu{
     display: flex;
@@ -58,27 +66,50 @@ body{
     box-shadow: 0 1px 0 0 ;
     cursor: pointer;
 }
-header{
-    width: 320px;
-    background-color: #260401;
-}
 .btn_menu{
-    background-color: #98c433;
-    margin-left: 80%;
-    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
 }
 .icon_menu{
     height: 20px;
     width: 20px;
 }
-.logo_ecoride{
-    width: 200px;
-    height: 200px;
+.dropbtn {
+    background-color: white;
+    border: none;
+  }
+  .dropdown {
+    height: 80px;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 20px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
     display: flex;
-    justify-content: center;
-    margin-left: 20%;
+    flex-direction: row;
+    font-size: 12px;
+  }
+  .dropdown-content a:hover {
+    background-color:black;
+    color: white;
 }
+  .dropdown:hover .dropdown-content {display: flex;}
+  .dropdown:hover .dropbtn {background-color: #98c433;}
+
 nav{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
@@ -109,8 +140,9 @@ a{
     color: white;
 }
 .alogin{
-    background-color: white;
     color: #260401;
+    background-color: white;
+    padding: 2px;
 }
 main{
     padding: 10px;

@@ -133,6 +133,12 @@ a{
 .ahome{
     color: white;
 }
+.arrow_back{
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    color: white;
+}
 .acreer_uncompte{
     color: #260401;
     background-color: white;
