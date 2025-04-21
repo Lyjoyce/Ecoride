@@ -1,28 +1,20 @@
-body{ 
-    font-family: 'Franklin Gothic Medium','Times New Roman', Times, serif sans-serif;
-}
 body{
+    font-family: 'Franklin Gothic Medium','Times New Roman', Times, serif sans-serif;
+    min-width: 320px;
+    max-width: 768px;
     box-sizing: border-box;
-    max-width: 320px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 header{
-    width: 320px;
     background-color: #260401;
-}
-.banniere-logo{
-    display: flex;
-    justify-content: center;
 }
 .logo_ecoride{
     width: 100px;
     height: 100px;
 }
 .appbar{
-    max-width: 320px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,6 +101,7 @@ header{
 }
   .dropdown:hover .dropdown-content {display: flex;}
   .dropdown:hover .dropbtn {background-color: #98c433;}
+
 
 nav{
     font-family: 'Times New Roman', Times, serif;
