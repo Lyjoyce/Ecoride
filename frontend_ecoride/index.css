@@ -1,27 +1,26 @@
-body{ 
-    font-family: 'Franklin Gothic Medium','Times New Roman', Times, serif sans-serif;
-}
-
-body{
-    box-sizing: border-box;
-    max-width: 320px;
-    margin: 0;
+*{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+body{ 
+    font-family: 'Franklin Gothic Medium','Times New Roman', Times, serif sans-serif;
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 768px;
+    margin: 0;
 }
 
 .banniere-logo{
-    display: flex;
-    justify-content: center;
     font-family: cursive;
+    align-items: center;
 }
 .logo_ecoride{
     width: 100px;
     height: 100px;
+    border: #260401 solid;
 }
 header{
-    width: 320px;
     background-color: #260401;
 }
 .btn_menu{
@@ -30,6 +29,7 @@ header{
     background-color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .icon_menu{
@@ -62,7 +62,6 @@ header{
     flex-direction: row;
     font-size: 12px;
   }
-
   .dropdown-content a:hover {
     background-color:black;
     color: white;
@@ -75,15 +74,14 @@ nav{
     font-size: medium;
     width: 250px;
     height: 30px;
-    margin-left:35px;
+    margin-left:15%;
     background-color: #260401;
     display: flex;
+    flex-direction: row;
     justify-items: center;
     justify-content: space-around;
     align-items: center;
     border: solid 2px #639e3f;
-    position:absolute;
-    margin-top: -15px;
 }
 a{
     cursor: pointer;
@@ -96,7 +94,6 @@ a{
     padding: 2px;
 }
 main{
-    width: 320px;
     height: auto;
     background-color: #639e3f;
     display: flex;
@@ -107,7 +104,7 @@ main{
 
 .presentation_ecoride{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 350px;
+    height: 400px;
     width: 290px;
     margin-top: 30px;
     background-color:#26116A;
@@ -163,10 +160,10 @@ h1{
     margin-top: 5px;
 }
 
-.card{
+.card_formulaire{
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 200px;
+    height: 300px;
     width: 290px;
     background-color: #98c433;
     border-radius: 5px;
@@ -226,8 +223,6 @@ input{
 footer{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
-    width: auto;
-    height: auto;
     padding: 5px;
     background-color: #260401;
     color: white;
@@ -238,14 +233,13 @@ footer{
 }
 
 @media only screen and (min-width: 768px) {
-  body {
+    body{
+        min-width: 768px;
+        max-width: 1024px;
+    }
+ 
+    .appbar{
     min-width: 768px;
-  }
-  header{
-    min-width: 768px;
-  }
-  .appbar{
-    max-width: 768px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -253,83 +247,246 @@ footer{
     background-color:#639e3f;
     color: black;
 }
-.logo_ecoride{
-    margin-left: 35%;
-}
-.btn_menu{
-    margin-left: 90%;
-}
+
 nav{
-    width: 700px;
+    width: 500px;
 }
-.presentation{
+.presentation_ecoride{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 300px;
-    margin-top: 20px;
-    background-color: #260401;
+    height: 600px;
+    width: 690px;
+    margin-top: 30px;
+    background-color:#26116A;
     color: white;
 }
 h1{
-    font-size: larger;
-    padding: 20px;
-}
-h2{
-    font-size: medium;
+    font-size: large;
+    margin: 10px;
 }
 .txt_eco_slogan{
+    font-size:medium;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    margin-left:200px;
-    margin-top: -40px;
+    margin-left: 60%;
+    margin-top: -25%;
 }
 .img_presentation{
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    display: flex;
-    position: absolute;
-}
-.car_covoiturage{
-    width: 150px;
-    height: 150px;
-    border-radius: 50px;
-    margin-left: 300px;
-    margin-top: 1px;
-}
-.car_eco{
     width: 150px;
     height: 150px;
     border-radius: 30px;
-    margin-left: 100px;
+    display: flex;
     margin-top: 10px;
 }
-.car_bio{
-    width: 150px;
-    height: 150px;
-    margin-top: 5px;
-    margin-left: 500px;
+.car_covoiturage{
+    margin-left: 50%;
 }
+.car_eco{
+   margin-left: 30%;
+}
+.car_bio{
+   margin-left: 10%;
+}
+
 .presentation_itinerary{
-    width: auto;
+    height: 150px;
+    width: 690px;
+    background-color:#98c433;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .img_search_my_itinerary{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: #26116A solid ;
     margin-left: 40%;
 }
 .rod_presentation_itinerary{
-    width: auto;
+    width: 690px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #26116A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
 }
-.card{
-    width: auto;
-    height: 250px;
+
+.card_formulaire{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 300px;
+    width: 690px;
+    background-color: #98c433;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.rod{
+.rod_dep{
+    height: 30px;
+    width: 580px;
+    background-color: #260401;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+
+}
+.rod_arrived{
+    height: 30px;
+    width: 580px;
+    background-color: #260401;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+}
+input{
+    width: 580px;
+}
+.search{
+    width: 660px;
+}
+}
+
+
+@media only screen and (min-width: 1024px) {
+    body{
+        min-width: 1024px;
+        max-width: none;
+        font-size: medium;
+    }
+ 
+    .appbar{
+    min-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:#639e3f;
+    color: black;
+}
+
+nav{
     width: 700px;
 }
-.rod_support{
+.presentation_ecoride{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 700px;
+    width: 990px;
+    margin-top: 30px;
+    background-color:#26116A;
+    color: white;
+}
+h1{
+    font-size: large;
+    margin: 10px;
+}
+.txt_eco_slogan{
+    font-size:large;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60%;
+    margin-top: -25%;
+}
+.img_presentation{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    display: flex;
+    margin-top: 10px;
+}
+.car_covoiturage{
+    margin-left: 50%;
+}
+.car_eco{
+   margin-left: 30%;
+}
+.car_bio{
+   margin-left: 10%;
+}
+
+.presentation_itinerary{
+    height: 250px;
+    width: 990px;
+    background-color:#98c433;
     margin-top: 20px;
-    width: auto;
+    margin-bottom: 10px;
+}
+.img_search_my_itinerary{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: #26116A solid ;
+    margin-left: 40%;
+}
+.rod_presentation_itinerary{
+    width: 990px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #26116A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.card_formulaire{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 300px;
+    width: 990px;
+    background-color: #98c433;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rod_dep{
+    height: 30px;
+    width: 880px;
+    background-color: #260401;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+
+}
+.rod_arrived{
+    height: 30px;
+    width: 880px;
+    background-color: #260401;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+}
+input{
+    width: 880px;
+}
+.search{
+    width: 960px;
+    height: 50px;
 }
 }
+
+
