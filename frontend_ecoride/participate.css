@@ -245,42 +245,6 @@ footer{
 nav{
     width: 500px;
 }
-.presentation_ecoride{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 600px;
-    width: 690px;
-    margin-top: 30px;
-    background-color:#26116A;
-    color: white;
-}
-h1{
-    font-size: large;
-    margin: 10px;
-}
-.txt_eco_slogan{
-    font-size:medium;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    margin-left: 60%;
-    margin-top: -25%;
-}
-.img_presentation{
-    width: 150px;
-    height: 150px;
-    border-radius: 30px;
-    display: flex;
-    margin-top: 10px;
-}
-.car_covoiturage{
-    margin-left: 50%;
-}
-.car_eco{
-   margin-left: 30%;
-}
-.car_bio{
-   margin-left: 10%;
-}
 
 .presentation_itinerary{
     height: 150px;
@@ -353,6 +317,7 @@ input{
 }
 }
 
+
 @media only screen and (min-width: 1024px) {
     body{
         min-width: 1024px;
@@ -367,42 +332,6 @@ input{
     nav{
     width: 700px;
     }
-    .presentation_ecoride{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 700px;
-    width: 990px;
-    margin-top: 30px;
-    background-color:#26116A;
-    color: white;
-    }
-h1{
-    font-size: large;
-    margin: 10px;
-}
-.txt_eco_slogan{
-    font-size:large;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    margin-left: 60%;
-    margin-top: -25%;
-}
-.img_presentation{
-    width: 200px;
-    height: 200px;
-    border-radius: 30px;
-    display: flex;
-    margin-top: 10px;
-}
-.car_covoiturage{
-    margin-left: 50%;
-}
-.car_eco{
-   margin-left: 30%;
-}
-.car_bio{
-   margin-left: 10%;
-}
 
 .presentation_itinerary{
     height: 250px;
