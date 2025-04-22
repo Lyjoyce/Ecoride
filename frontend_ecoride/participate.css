@@ -102,43 +102,13 @@ main{
     align-items: center;
 }
 
-.presentation_ecoride{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 400px;
-    width: 290px;
-    margin-top: 30px;
-    background-color:#26116A;
-    color: white;
-    display: flex;
-    flex-direction: column;
-}
-h1{
-    font-size: medium;
-    margin: 10px;
-}
-.txt_eco_slogan{
-    font-size: smaller;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    margin-left: 60%;
-    margin-top: -25%;
-}
-.img_presentation{
-    width: 100px;
-    height: 100px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 25%;
-}
 
 .presentation_itinerary{
     height: 150px;
     width: 290px;
     background-color:#98c433;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 .img_search_my_itinerary{
@@ -161,9 +131,9 @@ h1{
 }
 
 .card_formulaire{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
-    height: 300px;
+    height: 800px;
     width: 290px;
     background-color: #98c433;
     border-radius: 5px;
@@ -173,10 +143,10 @@ h1{
     align-items: center;
 }
 .rod_dep{
-    height: 30px;
+    height: 50px;
     width: 280px;
-    background-color: #260401;
-    color: white;
+    background-color: white;
+    color:#260401;
     margin-top: 10px;
     cursor: pointer;
     display: flex;
@@ -185,8 +155,8 @@ h1{
     padding: 2px;
 
 }
-.rod_arrived{
-    height: 30px;
+.rod_destination {
+    height: 50px;
     width: 280px;
     background-color: #260401;
     color: white;
@@ -196,6 +166,48 @@ h1{
     justify-content: space-evenly;
     align-items: center;
     padding: 2px;
+}
+.rod_destination a:hover{
+        background-color:white;
+        color: black;
+    }
+    .rod_destinations {
+        height: 150px;
+        width: 280px;
+        background-color: #260401;
+        color: white;
+        margin-top: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2px;
+    }
+    .rod_destinations a:hover{
+            background-color:white;
+            color: black;
+        }
+    
+
+.rod{
+    height: 30px;
+    width: 280px;
+    background-color: #260401;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+.dropdown-content-destination a{
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+
 }
 input{
     margin: 10px;
