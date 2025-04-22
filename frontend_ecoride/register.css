@@ -1,8 +1,8 @@
-body{
+body{ 
     font-family: 'Franklin Gothic Medium','Times New Roman', Times, serif sans-serif;
+    box-sizing: border-box;
     min-width: 320px;
     max-width: 768px;
-    box-sizing: border-box;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -10,10 +10,14 @@ body{
 header{
     background-color: #260401;
 }
+.banniere-logo{
+    font-family: cursive;
+}
 .logo_ecoride{
     width: 100px;
     height: 100px;
 }
+
 .appbar{
     display: flex;
     justify-content: space-between;
@@ -102,7 +106,10 @@ header{
   .dropdown:hover .dropdown-content {display: flex;}
   .dropdown:hover .dropbtn {background-color: #98c433;}
 
-
+  .headnav{
+    display: flex;
+    justify-content: center;
+}
 nav{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
@@ -137,9 +144,13 @@ a{
     background-color: white;
     padding: 2px;
 }
+
 main{
     padding: 10px;
     background-color: #639e3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input{
@@ -147,7 +158,7 @@ input{
 }
 .card{
     margin-top: 20px;
-    height: 500px;
+    height: 400px;
     width: 300px;
     background-color: #98c433;
     border-radius: 5px;
@@ -165,30 +176,19 @@ input{
     justify-content: center;
     padding: 2px;
 }
-
-.rod_support{
-    height: 50px;
+.submit{
     width: 260px;
-    background-color: #260401;
-    margin-top: 0px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-}
-.search{
-    width: 250px;
     height: 30px;
+    margin: 20px;
     border-radius: 100px;
     background: #ff3e3e;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     color: black;
     cursor: pointer;
 }
+
 .mdp_oublie{
     width: 130px;
     height: 20px;
@@ -243,48 +243,103 @@ footer{
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    min-width: 768px;
+    body {
+      min-width: 768px;
+      max-width: 1024px;
+    }
+   
+  .logo_ecoride{
+      margin-left: 35%;
   }
-  header{
-    min-width: 768px;
+  .btn_menu{
+      margin-left: 90%;
   }
-.logo_ecoride{
-    margin-left: 35%;
-}
-.btn_menu{
-    margin-left: 90%;
-}
-nav{
+  nav{
+      width: 700px;
+  }
+  .alogin{
+      padding: 2px;
+  }
+  .card{
+      width: auto;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .rod{
+      width: 700px;
+  }
+  .rod_support{
+      height: 50px;
+      width: 260px;
+      background-color: #260401;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+  }
+  .search{
+      width: 250px;
+      height: 30px;
+      border-radius: 100px;
+      background: #ff3e3e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      cursor: pointer;
+  }
+  .icon-search{
+      height: 25px;
+      color: black;
+      margin-left: -30px;
+      cursor: pointer;
+  }
+  .mdp_oublie{
+      width: 130px;
+      height: 20px;
+      padding: 2px;
+      border: solid 2px #260401;
+      border-radius: 70px;
+      padding: 5px;
+      margin: 20px;
+  }
+  .half-rod_gp{
+      width: auto;
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+  .half-rod{
+      width: 350px;
+  }
+  .rod_support{
+      margin-top: 20px;
+      width: auto;
+  }
+  .card_info{
+      width: auto;
+      height: 150px;
+  }
+  }
+  
+  
+@media only screen and (min-width: 1024px) {
+    body{
+        min-width: 1024px;
+        max-width: none;
+        font-size: medium;
+    }
+    .logo_ecoride{
+        width: 200px;
+        height: 200px;
+    }
+ 
+    nav{
     width: 700px;
+    }
 }
 
-.card{
-    width: auto;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.rod{
-    width: 700px;
-}
-.half-rod_gp{
-    width: auto;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.half-rod{
-    width: 350px;
-}
-.rod_support{
-    margin-top: 20px;
-    width: auto;
-}
-.card_info{
-    width: auto;
-    height: 150px;
-}
-}
