@@ -155,7 +155,7 @@ function checkAnswer(selectAnswer) {
         incrementScore()
     }
 }
-/*
+
 //Incrémenter le score
 
 let score = 0
@@ -166,7 +166,7 @@ function incrementScore() {
 function showFinalResult() {
     const quizContainer = document.getElementById("quiz-container")
     quizContainer.innerHTML = `
-    <div id="result>
+    <div id="result">
     <p>Votre score final est de ${score} sur ${questions.length}.</p>
     </div>
     `
