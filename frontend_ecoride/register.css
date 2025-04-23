@@ -11,6 +11,8 @@ header{
     background-color: #260401;
 }
 .banniere-logo{
+    display: flex;
+    justify-content: center;
     font-family: cursive;
 }
 .logo_ecoride{
