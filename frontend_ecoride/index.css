@@ -136,22 +136,6 @@ h1{
     margin-left: 25%;
 }
 
-
-.presentation_itinerary{
-    height: 150px;
-    width: 290px;
-    background-color:#98c433;
-    margin-top: 20px;
-    margin-bottom: 10px;
-
-}
-.img_search_my_itinerary{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    border: #26116A solid ;
-    margin-left: 30%;
-}
 .rod_presentation_itinerary{
     width: 290px;
     height: 30px;
@@ -161,13 +145,13 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 50px;
 }
 
 .card_formulaire{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
-    height: 300px;
+    height: 600px;
     width: 290px;
     background-color: #98c433;
     border-radius: 5px;
@@ -178,9 +162,9 @@ h1{
 }
 .rod_dep{
     height: 30px;
-    width: 280px;
-    background-color: white;
-    color: #26116A;
+    width: 250px;
+    background-color:#260401;
+    color:white;
     margin-top: 10px;
     cursor: pointer;
     display: flex;
@@ -189,11 +173,17 @@ h1{
     padding: 2px;
 
 }
-.rod_arrived{
-    height: 30px;
+.card-destination{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rod_destination {
+    height: 50px;
     width: 280px;
-    background-color: #26116A;
-    color: white;
+    background-color: white;
+    color:#26116A;
     margin-top: 10px;
     cursor: pointer;
     display: flex;
@@ -201,6 +191,35 @@ h1{
     align-items: center;
     padding: 2px;
 }
+.rod_destination a:hover{
+        background-color:#26116A;
+        color: white;
+    }
+    .rod_destinations {
+        height: 150px;
+        width: 280px;
+        background-color: white;
+        color: #26116A;
+        margin-top: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2px;
+    }
+    .rod_destinations a:hover{
+            background-color:#26116A;
+            color: white;
+        }
+        .dropdown-content-destination a{
+            color: black;
+            padding: 5px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+        }
+
 input{
     margin: 10px;
     height: 30px;
@@ -276,7 +295,7 @@ h1{
     margin: 0;
     display: flex;
     flex-direction: column;
-    margin-left: 60%;
+    margin-left: 70%;
     margin-top: -10%;
 }
 .img_presentation{
@@ -295,37 +314,14 @@ h1{
 .car_bio{
    margin-left: 40%;
 }
-
-.presentation_itinerary{
-    height: 150px;
-    width: 690px;
-    background-color:#98c433;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-.img_search_my_itinerary{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    border: #26116A solid ;
-    margin-left: 40%;
-}
 .rod_presentation_itinerary{
     width: 690px;
-    height: 30px;
-    border-radius: 100px;
-    background-color: #26116A;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
 }
 
 .card_formulaire{
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 300px;
+    height: 500px;
     width: 690px;
     background-color: #98c433;
     border-radius: 5px;
@@ -337,8 +333,8 @@ h1{
 .rod_dep{
     height: 30px;
     width: 580px;
-    background-color: white;
-    color: #26116A;
+    background-color: #260401;
+    color:white;
     margin-top: 10px;
     cursor: pointer;
     display: flex;

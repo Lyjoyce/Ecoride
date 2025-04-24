@@ -124,8 +124,8 @@ main{
     width: 290px;
     height: 30px;
     border-radius: 100px;
-    background-color: white;
-    color: black;
+    background-color: #26116A;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +135,7 @@ main{
 .card_formulaire{
     margin-top: 20px;
     margin-bottom: 10px;
-    height: 600px;
+    height: 400px;
     width: 290px;
     background-color: #98c433;
     border-radius: 5px;
@@ -147,8 +147,8 @@ main{
 .rod_dep{
     height: 30px;
     width: 250px;
-    background-color: white;
-    color:black;
+    background-color: #260401;
+    color: white;
     margin-top: 10px;
     cursor: pointer;
     display: flex;
@@ -196,17 +196,6 @@ main{
             color: white;
         }
 
-.rod{
-    height: 30px;
-    width: 280px;
-    background-color: #260401;
-    color: white;
-    margin-top: 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 2px;
-}
 .dropdown-content-destination a{
     color: black;
     padding: 5px;
@@ -214,7 +203,6 @@ main{
     display: flex;
     flex-direction: row;
     font-size: 12px;
-
 }
 input{
     margin: 10px;
@@ -272,24 +260,7 @@ nav{
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.img_search_my_itinerary{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    border: #26116A solid ;
-    margin-left: 40%;
-}
-.rod_presentation_itinerary{
-    width: 690px;
-    height: 30px;
-    border-radius: 100px;
-    background-color: #26116A;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-}
+
 
 .card_formulaire{
     margin-top: 10px;
@@ -336,7 +307,6 @@ input{
 }
 }
 
-
 @media only screen and (min-width: 1024px) {
     body{
         min-width: 1024px;
@@ -365,17 +335,6 @@ input{
     border-radius: 100px;
     border: #26116A solid ;
     margin-left: 40%;
-}
-.rod_presentation_itinerary{
-    width: 990px;
-    height: 50px;
-    border-radius: 100px;
-    background-color: #26116A;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
 }
 
 .card_formulaire{
