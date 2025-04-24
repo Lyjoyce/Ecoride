@@ -8,9 +8,11 @@ body{
     flex-direction: column;
 }
 header{
-    background-color: #260401;
+    background-color: #98c433;
 }
 .banniere-logo{
+    display: flex;
+    justify-content: center;
     font-family: cursive;
 }
 .logo_ecoride{
@@ -74,7 +76,7 @@ nav{
     width: 250px;
     height: 30px;
     margin-left:15%;
-    background-color: #260401;
+    background-color: #26116A;
     display: flex;
     justify-items: center;
     justify-content: space-around;
@@ -236,7 +238,7 @@ footer{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     padding: 5px;
-    background-color: #260401;
+    background-color: #26116A;
     color: white;
     display: flex;
     flex-direction: column;
