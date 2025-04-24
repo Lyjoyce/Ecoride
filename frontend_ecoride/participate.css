@@ -38,7 +38,7 @@ header{
     border: none;
   }
   .dropdown {
-    height: 80px;
+    height: 30px;
     position: relative;
     display:flex;
     flex-direction: row;
@@ -124,18 +124,18 @@ main{
     width: 290px;
     height: 30px;
     border-radius: 100px;
-    background-color: #26116A;
-    color: white;
+    background-color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 50px;
 }
 
 .card_formulaire{
     margin-top: 20px;
     margin-bottom: 10px;
-    height: 800px;
+    height: 600px;
     width: 290px;
     background-color: #98c433;
     border-radius: 5px;
@@ -145,10 +145,10 @@ main{
     align-items: center;
 }
 .rod_dep{
-    height: 50px;
-    width: 280px;
+    height: 30px;
+    width: 250px;
     background-color: white;
-    color:#260401;
+    color:black;
     margin-top: 10px;
     cursor: pointer;
     display: flex;
@@ -157,11 +157,17 @@ main{
     padding: 2px;
 
 }
+.card-destination{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .rod_destination {
     height: 50px;
     width: 280px;
-    background-color: #260401;
-    color: white;
+    background-color: white;
+    color:#26116A;
     margin-top: 10px;
     cursor: pointer;
     display: flex;
@@ -170,14 +176,14 @@ main{
     padding: 2px;
 }
 .rod_destination a:hover{
-        background-color:white;
-        color: black;
+        background-color:#26116A;
+        color: white;
     }
     .rod_destinations {
         height: 150px;
         width: 280px;
-        background-color: #260401;
-        color: white;
+        background-color: white;
+        color: #26116A;
         margin-top: 10px;
         cursor: pointer;
         display: flex;
@@ -186,10 +192,9 @@ main{
         padding: 2px;
     }
     .rod_destinations a:hover{
-            background-color:white;
-            color: black;
+            background-color:#26116A;
+            color: white;
         }
-    
 
 .rod{
     height: 30px;
@@ -203,7 +208,7 @@ main{
     padding: 2px;
 }
 .dropdown-content-destination a{
-    color: white;
+    color: black;
     padding: 5px;
     text-decoration: none;
     display: flex;
