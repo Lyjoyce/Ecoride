@@ -248,15 +248,31 @@ input{
     align-items: center;
     justify-content: center;
 }
+
 footer{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
-    padding: 20px;
+    padding-bottom: 15px;
     background-color: #26116A;
     color: white;
     display: flex;
+    justify-content: space-evenly;
+}
+.footerlink{
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+}
+.footera:hover{
+    background-color: white;
+    color: black;
+}
+.banniere-logo-footer{
+    font-family: cursive;
+}
+.logo_footer{
+    height: 50px;
+    width: 50px;
 }
 
 

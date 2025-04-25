@@ -230,13 +230,27 @@ input{
 footer{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
-    padding: 5px;
+    padding-bottom: 15px;
     background-color: #26116A;
     color: white;
     display: flex;
+    justify-content: space-evenly;
+}
+.footerlink{
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+.footera:hover{
+    background-color: white;
+    color: black;
+}
+.banniere-logo-footer{
+    font-family: cursive;
+}
+.logo_footer{
+    height: 50px;
+    width: 50px;
 }
 
 @media only screen and (min-width: 768px) {
