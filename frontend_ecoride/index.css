@@ -93,7 +93,17 @@ a{
 }
 .ahome{
     background-color: white;
-    color: #260401;
+    color: black;
+    padding: 2px;
+}
+.acreer_uncompte:hover{
+    color: black;
+    background-color: white;
+    padding: 2px;
+}
+.alogin:hover{
+    color: black;
+    background-color: white;
     padding: 2px;
 }
 main{
@@ -246,24 +256,28 @@ input{
 footer{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
-    padding: 5px;
+    padding-bottom: 15px;
     background-color: #26116A;
     color: white;
     display: flex;
+    justify-content: space-evenly;
+}
+.footerlink{
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+.footera:hover{
+    background-color: white;
+    color: black;
 }
 .banniere-logo-footer{
-    display: flex;
-    justify-content: flex-start;
     font-family: cursive;
 }
 .logo_footer{
     height: 50px;
     width: 50px;
-    display:flex;
-    justify-content: flex-start;
+
 }
 @media only screen and (min-width: 768px) {
     body{

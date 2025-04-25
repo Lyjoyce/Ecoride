@@ -133,20 +133,27 @@ a{
     color: white;
     text-decoration: none;
 }
-.ahome{
-    color: white;
-}
 .arrow_back{
     width: 20px;
     height: 20px;
     margin-top: -10px;
     color: white;
 }
-.alogin{
+.ahome:hover{
+    background-color: white;
+    color: black;
+}
+.acreer_uncompte{
     color: black;
     background-color: white;
     padding: 2px;
 }
+.alogin:hover{
+    color: black;
+    background-color: white;
+    padding: 2px;
+}
+
 main{
     padding: 10px;
     background-color: #639e3f;
