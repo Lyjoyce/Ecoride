@@ -1,0 +1,5 @@
+spring.application.name=ecorideApi
+server.port=8081
+spring.datasource.url=jdbc:mysql:localhost:3307:Pomceriz&:O+pluie77
+spring.h2.console.enabled=true
+spring.jpa.show-sql=true

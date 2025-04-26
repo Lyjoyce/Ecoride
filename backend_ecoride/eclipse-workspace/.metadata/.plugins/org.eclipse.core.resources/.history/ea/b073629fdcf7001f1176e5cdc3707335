@@ -1,0 +1,67 @@
+package com.example.api.web;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.api.entities.Actor;
+import com.example.api.repositories.ActorRepository;
+
+@RestController
+@RequestMapping("/api/v1/actor")
+public class ActorController {
+	@Autowired
+	private ActorRepository actorRepository;
+	@GetMapping("/test")
+public String testCallActor() {
+	return "ActorController ok";
+}
+	@PostMapping("/addNewActor")
+	public Actor createActor(@RequestBody Actor actor) {
+		return actorRepository.save(actor);
+	}
+	@GetMapping("/findAll")
+	public List<Actor> getAllActors(){
+		return actorRepository.findAll();
+	}
+	@GetMapping("/findAllActif")
+	public List<Actor> getAllActiveActors(){
+		return actorRepository.findByIsActiveTrue();
+	}
+	
+	
+	
+	@GetMapping("/{id}")
+	public ResponseEntity<Actor> getActorById(@PathVariable Long id){
+		return actorRepository.findById(id)
+				.map(ResponseEntity::ok)
+				.orElse(ResponseEntity.notFound().build());
+	}
+	@PutMapping("/{id}")
+	public ResponseEntity<Actor> updateActor(@PathVariable Long id, @RequestBody Actor actorDetails){
+		return actorRepository.findById(id)
+				.map(actor->{
+					actor.setLastname(actorDetails.getLastname());
+					return ResponseEntity.ok(actorRepository.save(actor));
+				})
+				.orElse(ResponseEntity.notFound().build());
+	}
+	//softDelete
+	@PutMapping("/delete/{id}")
+	public ResponseEntity<Actor> deleteSoftly(@PathVariable Long id){
+		return actorRepository.findById(id)
+				.map(actor->{
+					actor.setActive(false);
+					return ResponseEntity.ok(actorRepository.save(actor));
+				})
+				.orElse(ResponseEntity.notFound().build());
+	}		
+}
