@@ -17,7 +17,15 @@
                 <img src="/frontend_ecoride/images/logo1.png" class="logo_ecoride" alt="logo_ecoride">
             </div>
             <div class="myself">
-                <div></div>
+                <div>
+                    <div class= "showFirstnameMenu appbar">
+                        <div class="firstname-menu">
+                            <span id="firstname-display"></span>
+                            <button id="logout-btn">Se déconnecter</button>
+                        </div>
+                        <button type="button" class="ecoriders" onclick="ecoriders()">Ecoriders</button>
+                    </div>
+                </div>
                 <div class="dropdown">
                     <button class="dropbtn btn_menu">
                         <img src="/frontend_ecoride/icons/icon_menu.png" class="icon_menu" alt="icon_menu">
@@ -25,17 +33,17 @@
                     <div class="dropdown-content">
                         <a href="details.html">covoiturages</a>
                         <a href="contact.html">contact</a>
-                        <a href="login.html">connection</a>
-                        <a href="login.html">déconnection</a>
+                        <a href="/frontend_ecoride/login.html">connection</a>
+                        <a href="/frontend_ecoride/login.html">déconnection</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="headnav">
             <nav>
-                <a href="index.html" class="ahome">Home</a>
-                <a href="/frontend/register.html" class="acreer_uncompte">Créer un compte</a>
-                <a href="/frontend/index.html" class="alogin">Login</a>
+                <a href="/frontend_ecoride/index.html" class="ahome">Home</a>
+                <a href="/frontend_ecoride/register.html" class="acreer_uncompte">Créer un compte</a>
+                <a href="/frontend_ecoride/login.html" class="alogin">Login</a>
             </nav>
         </div>
     </header>
@@ -56,13 +64,11 @@
         </div>
 
         <form>
-           
-        <form>
             <div class="card_formulaire">
                 <div>
                 <div class="dropdown">
                     <button class="rod_dep">
-                        De Paris: Ile-de-France vers
+                        De Paris : Ile-de-France vers
                     </button>
                     <div class="dropdown-content">
                         <a href="parisgaremontparnasse.html">Paris gare Montparnasse</a>
@@ -83,18 +89,16 @@
                         </div>
 
                         <div class="dropdown">
-                            <button class="dest-btn ">
+                            <div class="dest-btn ">
                                 Centre-Val de Loire
-                                <div>
                                     <a href="details-centre.html" class="ablack search">détails</a>
-                                </div>
-                            </button>
+                            </div>
                             <div class="dropdown-content">
                                 <a href="pariscentre.html">Paris- Centre-Val de Loire</a>
                             </div>
                         </div>
 <!--
-                        <a href="parisamboise.html">Paris-Amboise</a>
+                                <a href="parisamboise.html">Paris-Amboise</a>
                                 <a href="parisblois.html">Paris-Blois</a>
                                 <a href="parischartes.html">Paris-Chartres</a>
                                 <a href="parischateaudun.html">Paris-Chateaudun</a>

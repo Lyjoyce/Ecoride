@@ -30,11 +30,11 @@ header{
     color: black;
     margin-top: 10px;
 }
-.actorname-menu{
+.firstname-menu{
     display: flex;
     align-items: center;
 }
-#actorname-display{
+#firstname-display{
     background-color: white;
     border: none;
     color: black;

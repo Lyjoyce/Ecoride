@@ -1,3 +1,4 @@
+/*
 //Vérifier l'authentification de l'utilisateur
 document.addEventListener("DOMcontentLoaded", function () {
     const storedUsername = localStorage.getItem("username")
@@ -23,7 +24,7 @@ function showUserMenu(username) {
     usernameDisplay.textContent = username
     }
 // Gérer la déconnexion
-document.getElementById("logout-btn").addEventListener("click", function (){
+document.getElementById("logout-btn").addEventListener("click", function(){
     localStorage.setItem("isAuthenticated", false)
     window.location.href = "login.html"
 })
@@ -31,7 +32,7 @@ document.getElementById("logout-btn").addEventListener("click", function (){
 /**
  * cette function affiche username dans le span, le nom utilisateur du localStorage
  * @param {*} username 
- */
+ 
 function showUserMenu(username){
     const usernameDisplay= document.getElementById("username-display")
     usernameDisplay.textContent= username
@@ -52,64 +53,65 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 })
 
+*/
 //Choisir le niveau de difficulté
 document.querySelectorAll(".energy-btn").forEach((btn) =>{
     btn.addEventListener("click", function () {
         const level = btn.getAttribute("data-level")
-        loadQuestions(level)
+        loadCarpoolings(level)
     })
 })
 
-let currentParticipateIndex =0
-let participates = []
+let currentCarpoolingIndex =0
+let carpoolings = []
 let selectedEnergy = ""
 
 
-//Chargement des questions en fonction du niveau sélectionné
-
+//Chargement des carpoolings 
 //const URL= "https://46921d2a-73a6-436b-aca9-deb6e9823b49.mock.pstmn.io/api/AllQuestions"
 
-async function loadParticipates(energy){
+async function loadCarpoolings(energy){
     try{
-        const response = await fetch("../front-end/participate.json")
+        const response = await fetch("./carpoolings.json")
 
         if (!response.ok){
             throw new Error(`Erreur HTTP: ${response.status}`)
         }
-        const allParticipates = await response.json()
+        const allCarpoolings = await response.json()
        
-//Filtrer les questions par diff
-        participates= allParticipates.filter((p) => p.energy === energy)
+//const URL= "https://46921d2a-73a6-436b-aca9-deb6e9823b49.mock.pstmn.io/api/AllQuestions"
+//Filtrer les  carpoolings 
+        carpoolings= allCarpoolings.filter((p) => p.energy === energy)
         selectedEnergy = energy
-        currentParticipateIndex = 0
+        currentCarpoolingIndex = 0
 
-        startQuiz()
+        start()
     }
     catch (error) {
-        console.error("Erreur lors du chargement des participates", error)
+        console.error("Erreur lors du chargement des carpoolings", error)
     }
 }
 
-//Démarrer le quiz
-function startQuiz() {
+//Démarrer 
+function start() {
     document.querySelector(".energy-selection").classList.add("hidden")
     document.getElementById("energy-container").classList.remove("hidden")
-    showParticipate()
+    showCarpooling()
 }
-//Afficher la question actuelle
-function showParticipate() {
-    if(currentParticipateIndex < participates.length) {
-        console.log(participates)
-        const participateData = participates[currentParticipateIndex]
-        console.log( "participate data" + participateData)
-        const participateContainer= document.getElementById("energy-container")
+//Afficher 
+function showCarpooling() {
+    if(currentCarpoolingIndex < carpoolings.length) {
+        console.log(carpoolings)
+        const carpoolingData = carpoolings[currentCarpoolingIndex]
+        console.log( "carpooling data" + carpoolingData)
+        const carpoolingContainer= document.getElementById("energy-container")
 
-        participateContainer.innerHTML = `
-        <div class"participate">
-        <p> ${participateData.participate} <p/>
+        carpoolingContainer.innerHTML = `
+        <div class"carpooling">
+        <p> ${carpoolingData.carpooling} <p/>
         <div/>
         <form id="quiz-form">
-         ${participateData.option
+         ${carpoolingData.option
          .map(
                 (option, index)=> `
                 <label class="option"> 
@@ -128,7 +130,7 @@ function showParticipate() {
         }
 }
 /*
-//Soumettre la réponse actuelle
+//Soumettre le choix
 function submitAnswer(){
     const form = document.getElementById("quiz-form")
     const selectAnswer = form.answer.value
@@ -137,7 +139,7 @@ function submitAnswer(){
         alert("Veuillez sélectionner une réponse")
         return
     }
-    //Vérifier la réponse et passer à la question suivante
+    //Vérifier la réponse et passer à la suivante
     checkAnswer(selectAnswer)
     nextQuestion()
 }

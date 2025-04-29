@@ -16,9 +16,9 @@
             </div>
             <div class="myself">
                 <div>
-                    <div class="appbar">
-                        <div class="actorname-menu">
-                            <span id="actorname-display"></span>
+                    <div class="showFirstnameMenu appbar">
+                        <div class="firstname-menu">
+                            <span id="firstname-display"></span>
                             <button id="logout-btn">Se déconnecter</button>
                         </div>
                         <button type="button" class="ecoriders" onclick="ecoriders()">Ecoriders</button>
@@ -29,21 +29,21 @@
                         <img src="/frontend_ecoride/icons/icon_menu.png" class="icon_menu" alt="icon_menu">
                     </button>
                     <div class="dropdown-content">
-                        <a href="details.html">covoiturages</a>
-                        <a href="contact.html">contact</a>
-                        <a href="login.html">connection</a>
-                        <a href="login.html">déconnection</a>
+                        <a href="/frontend_ecoride/details.html">covoiturages</a>
+                        <a href="/frontend_ecoride/">contact</a>
+                        <a href="/frontend_ecoride/login.html">connection</a>
+                        <a href="/frontend_ecoride/login.html">déconnection</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="headnav">
             <nav>
-                <a href="index.html" class="ahome">
-                    <img src="icons/icon_arrow_back.png" class="arrow_back" alt="">
+                <a href="/frontend_ecoride/index.html" class="ahome">
+                    <img src="/frontend_ecoride/icons/icon_arrow_back.png" class="arrow_back" alt="">
                     Home</a>
-                <a href="/frontend/register.html" class="acreer_uncompte">Créer un compte</a>
-                <a href="/frontend/index.html" class="alogin">Login</a>
+                <a href="/frontend_ecoride/register.html" class="acreer_uncompte">Créer un compte</a>
+                <a href="/frontend_ecoride/login.html" class="alogin">Login</a>
             </nav>
         </div>
     </header>
@@ -51,55 +51,44 @@
 
     <main>
 
-        <div class="container">
-
-            <form id="login-form">
-                <div class="card">
-                    <div class="rod">
-                        <label for="login-firstname"></label>
-                        <input type="text" id="login-firstname" name="firstname" placeholder="Your firstname">
-                    </div>
-                    <div class="rod"><label for="login-lastname"></label>
-                        <input type="text" id="login-lastname" name="lastname" placeholder="Your lastname" required>
-                    </div>
-                    <div class="rod">
-                        <label for="login-email"></label>
-                        <input type="email" id="login-email" placeholder="Enter your email"
-                            pattern='^[a-zA-Z0-9]{5}@[a-zA-Z0-9]{2,10}.(es|com|org)$' required>
-                    </div>
-                    <div class="rod">
-                        <label for="login-password"></label>
-                        <input type="password" id="login-password" name="password" placeholder="Enter passeword"
-                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{14,}"
-                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 14 or more characters"
-                            required>
-                    </div>
-                    <!--
-                    <div class="rod">
-                        <label for="login-password"></label>
-                        <input type="password" id="login-password2" name="password2" placeholder="Confirm passeword"
-                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{14,}"
-                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 14 or more characters"
-                            required>
-                    </div>
--->
-                    <div class="rod_support">
-                        <button type="submit" onclick="loginActor()" class="submit">submit</button>
-                    </div>
+        <form class="formulaire">
+            <div class="card">
+                <div class="rod">
+                    <label for="firstname"></label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Your firstname" required>
                 </div>
-            </form>
-        </div>
+                <div class="rod">
+                    <label for="lastname"></label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Your lastname" required>
+                </div>
+                <div class="rod">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"
+                        pattern='^[a-zA-Z0-9]{5}@[a-zA-Z0-9]{2,10}.(fr|com|org)$' required>
+                </div>
+                <div class="rod">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password"  autocomplete="current-password" placeholder="Enter passeword" 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{14,}" 
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 14 or more characters" required="">
+                </div>
+
+                <div class="rod_support">
+                    <button class="submit">Se connecter</button>
+                </div>
+            </div>
+        </form>
 
         <div id="message">
             <h3>Password must contain the following:</h3>
             <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
             <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
             <p id="number" class="invalid">A <b>number</b></p>
-            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            <p id="length" class="invalid">Minimum <b>14 characters</b></p>
         </div>
 
-        <div class="mdp_oublie"><a href="register.html">Mot de pass oublié</a> </div>
-        <p class="form_paraph">Vous n'avez pas de compte? <a href="register.html" class="formlink">Créer un compte</a>
+        <div class="mdp_oublie"><a href="/frontend_ecoride/register.html">Mot de pass oublié</a> </div>
+        <p class="form_paraph">Vous n'avez pas de compte? <a href="/frontend_ecoride/register.html" class="formlink">Créer un compte</a>
         </p>
         <div class="card_info">
             <h3 class="rod_infoplus"> crédits</h3>
@@ -109,12 +98,12 @@
 
     <footer>
         <img src="/frontend_ecoride/images/logo_footer.png" class="logo_ecoride" alt="logo_ecoride">
-    <div class="footerlink">
-        <a class="footera">ecoride@gmail.com</a>
-        <a  class="footera">Mentions légales</a>
-        <a  class="footera">Avis</a>
-    </div>
-</footer>
+        <div class="footerlink">
+            <a class="footera">ecoride@gmail.com</a>
+            <a class="footera">Mentions légales</a>
+            <a class="footera">Avis</a>
+        </div>
+    </footer>
     <script src="/frontend_ecoride/login.js"></script>
 </body>
 

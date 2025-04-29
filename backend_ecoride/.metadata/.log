@@ -1,4 +1,4 @@
-!SESSION 2025-03-25 15:00:22.865 -----------------------------------------------
+!SESSION 2025-03-25 15:32:21.279 -----------------------------------------------
 eclipse.buildId=4.33.0.20240905-0613
 java.version=23.0.1
 java.vendor=Eclipse Adoptium
@@ -6,55 +6,29 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY ch.qos.logback.classic 1 0 2025-03-25 15:00:26.246
+!ENTRY ch.qos.logback.classic 1 0 2025-03-25 15:32:25.451
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
-!ENTRY ch.qos.logback.classic 1 0 2025-03-25 15:00:57.902
-!MESSAGE Logback config file: C:\env_travail\workspace\Ecoride\backend\ecorideApi\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+!ENTRY ch.qos.logback.classic 1 0 2025-03-25 15:33:15.537
+!MESSAGE Logback config file: C:\Users\lahel\eclipse-workspace\ecorideApi\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
 
-!ENTRY org.eclipse.ui 2 0 2025-03-25 15:01:00.334
+!ENTRY org.eclipse.ui 2 0 2025-03-25 15:33:16.070
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-25 15:01:00.334
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-25 15:33:16.070
 !MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
 
-!ENTRY org.eclipse.ui 2 0 2025-03-25 15:01:05.029
+!ENTRY org.eclipse.ui 2 0 2025-03-25 15:33:16.488
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-25 15:01:05.031
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-25 15:33:16.488
 !MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
 
-!ENTRY org.eclipse.egit.ui 2 0 2025-03-25 15:01:12.338
+!ENTRY org.eclipse.egit.ui 2 0 2025-03-25 15:33:21.872
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\lahel'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.egit.ui 4 0 2025-03-25 15:09:26.943
-!MESSAGE Invalid project description.
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Invalid project description.
-	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:211)
-	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:95)
-	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
-	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
-	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:179)
-	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:104)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2451)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2471)
-	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:138)
-	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:62)
-	at org.eclipse.egit.ui.internal.clone.GitImportWizard.importProjects(GitImportWizard.java:254)
-	at org.eclipse.egit.ui.internal.clone.GitImportWizard$4.run(GitImportWizard.java:206)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
-Contains: OK
-Contains: C:\env_travail\workspace\Ecoride\backend\ecorideApi overlaps the workspace location: C:\env_travail\workspace\Ecoride\backend\ecorideApi
-!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-03-25 15:09:26.945
-!MESSAGE Invalid project description.
-!SUBENTRY 2 unknown 0 0 2025-03-25 15:09:26.945
-!MESSAGE OK
-!SUBENTRY 2 org.eclipse.core.resources 4 77 2025-03-25 15:09:26.945
-!MESSAGE C:\env_travail\workspace\Ecoride\backend\ecorideApi overlaps the workspace location: C:\env_travail\workspace\Ecoride\backend\ecorideApi
-!SESSION 2025-04-26 13:11:51.433 -----------------------------------------------
+!SESSION 2025-04-27 20:25:43.852 -----------------------------------------------
 eclipse.buildId=4.33.0.20240905-0613
 java.version=23.0.1
 java.vendor=Eclipse Adoptium
@@ -62,29 +36,29 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY ch.qos.logback.classic 1 0 2025-04-26 13:11:56.846
+!ENTRY ch.qos.logback.classic 1 0 2025-04-27 20:25:54.878
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
-!ENTRY ch.qos.logback.classic 1 0 2025-04-26 13:17:09.899
+!ENTRY ch.qos.logback.classic 1 0 2025-04-27 20:28:32.445
 !MESSAGE Logback config file: C:\env_travail\workspace\EcoRide_Sabrina\backend_ecoride\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
 
-!ENTRY org.eclipse.ui 2 0 2025-04-26 13:17:10.544
+!ENTRY org.eclipse.ui 2 0 2025-04-27 20:28:33.119
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-26 13:17:10.544
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-27 20:28:33.119
 !MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
 
-!ENTRY org.eclipse.ui 2 0 2025-04-26 13:17:11.050
+!ENTRY org.eclipse.ui 2 0 2025-04-27 20:28:33.529
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-26 13:17:11.052
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-27 20:28:33.529
 !MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
 
-!ENTRY org.eclipse.egit.ui 2 0 2025-04-26 13:17:15.644
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-27 20:28:37.958
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\lahel'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2025-04-26 13:18:33.239 -----------------------------------------------
+!SESSION 2025-04-28 15:44:49.091 -----------------------------------------------
 eclipse.buildId=4.33.0.20240905-0613
 java.version=23.0.1
 java.vendor=Eclipse Adoptium
@@ -92,23 +66,33 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY ch.qos.logback.classic 1 0 2025-04-26 13:18:36.208
+!ENTRY ch.qos.logback.classic 1 0 2025-04-28 15:45:01.045
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
-!ENTRY ch.qos.logback.classic 1 0 2025-04-26 13:18:51.415
+!ENTRY ch.qos.logback.classic 1 0 2025-04-28 15:46:13.848
 !MESSAGE Logback config file: C:\env_travail\workspace\EcoRide_Sabrina\backend_ecoride\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
 
-!ENTRY org.eclipse.ui 2 0 2025-04-26 13:18:52.106
+!ENTRY org.eclipse.ui 2 0 2025-04-28 15:46:14.966
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-26 13:18:52.106
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-28 15:46:14.966
 !MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
 
-!ENTRY org.eclipse.ui 2 0 2025-04-26 13:18:52.595
+!ENTRY org.eclipse.ui 2 0 2025-04-28 15:46:15.947
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-26 13:18:52.595
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-28 15:46:15.948
 !MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+!SESSION 2025-04-28 15:46:11.612 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=23.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\env_travail\workspace\EcoRide_Sabrina\backend_ecoride
 
-!ENTRY org.eclipse.egit.ui 2 0 2025-04-26 13:18:56.859
+!ENTRY ch.qos.logback.classic 1 0 2025-04-28 15:46:19.217
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-28 15:46:29.953
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\lahel'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
