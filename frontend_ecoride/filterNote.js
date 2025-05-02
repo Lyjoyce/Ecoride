@@ -63,31 +63,31 @@ document.addEventListener("DOMContentLoaded", function(){
 document.querySelectorAll(".note-btn").forEach((btn) => {
     btn.addEventListener("click", function() {
         const level = btn.getAttribute("data-level")
-        loadQuestions(level)
+        loadCarpools(level)
     })
 })
-let currentQuestionIndex = 0
-let questions =[]
+let currentCarpoolIndex = 0
+let carpools =[]
 let selectedNote = ""
 
 //Chargement des questions en fonction du niveau sélectionné
 //const URL= "https://46921d2a-73a6-436b-aca9-deb6e9823b49.mock.pstmn.io/api/AllQuestions"
 
-async function loadQuestions(note){
+async function loadCarpools(note){
     try{
-        const response = await fetch ("/frontend_ecoride/questions.json")
+        const response = await fetch ("/frontend_ecoride/carpools.json")
 
         if (!response.ok){
             throw new Error(`Erreur HTTP: ${response.status}`)
         }
-        const allQuestions = await response.json()
+        const allCarpools = await response.json()
 
 //Filtrer les questions par diff
-        questions = allQuestions.filter((q) => q.note === note)
+        carpools = allCarpools.filter((c) => c.note === note)
         selectedNote = note
-        currentQuestionIndex = 0
+        currentCarpoolIndex = 0
 
-      / startQuiz()
+      / startFilterNote()
     }
     catch (error) {
         console.error("Erreur lors du chargement des questions", error)
@@ -95,24 +95,24 @@ async function loadQuestions(note){
 }
 
 //Démarrer le quiz
-function startQuiz() {
+function startFilterNote() {
     document.querySelector(".note-selection").classList.add("hidden")
     document.getElementById("filter-container").classList.remove("hidden")
-    showQuestion()
+    showCarpool()
 }
 
 //Afficher la question actuelle
-function showQuestion() {
-    if(currentQuestionIndex < questions.length) {
-        const questionData = questions[currentQuestionIndex]
-        const questionContainer= document.getElementById("filter-container")
+function showCarpool() {
+    if(currentCarpoolIndex < carpools.length) {
+        const carpoolData = carpools[currentCarpoolIndex]
+        const carpoolContainer= document.getElementById("filter-container")
 
-        questionContainer.innerHTML = `
-        <div class"question">
-        <p> ${questionData.question} <p/>
+        carpoolContainer.innerHTML = `
+        <div class"carpool">
+        <p> ${carpoolData.carpool} <p/>
         <div/>
         <form id="filter-form">
-         ${questionData.options
+         ${carpoolData.options
          .map(
                 (option, index)=> `
                 <label class="option"> 
@@ -142,16 +142,16 @@ function submitAnswer(){
     }
     //Vérifier la réponse et passer à la suivante
     checkAnswer(selectAnswer)
-    nextQuestion()
+    nextCarpool()
 }
-function nextQuestion(){
-    currentQuestionIndex++
-    showQuestion()
+function nextCarpool(){
+    currentCarpoolIndex++
+    showCarpool()
 }
 // Vérifier si la réponse est correcte
 function checkAnswer(selectAnswer) {
-    const currentQuestion = questions[currentQuestionIndex]
-    if (selectAnswer === currentQuestion.answer){
+    const currentCarpool = carpools[currentCarpoolIndex]
+    if (selectAnswer === currentCarpool.answer){
         incrementScore()
     }
 }
@@ -166,7 +166,7 @@ function showFinalResult() {
     const filterContainer = document.getElementById("filter-container")
     filterContainer.innerHTML = `
     <div id="result">
-    <p>Votre score final est de ${score} sur ${questions.length}.</p>
+    <p>Votre score final est de ${score} sur ${carpools.length}.</p>
     </div>
     `
 }

@@ -1,6 +1,6 @@
 [
     {
-      "question": "Paris-Amboise",
+      "carpool": "Paris-Amboise",
       "options": [
           "carpooling:Paris-Amboise, conducteur:Rose Mai",
           "carpooling:Paris-Amboise, conducteur:Eliot Cool"

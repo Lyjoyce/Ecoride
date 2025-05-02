@@ -1,0 +1,31 @@
+[
+    {
+      "carpool": "Paris-Amboise",
+      "options": [
+          "carpooling:Paris-Amboise, conducteur:Rose Mai",
+          "carpooling:Paris-Amboise, conducteur:Eliot Cool"
+      ],
+      "answer": "",
+      "note":"4"
+    },
+    {
+      "carpool": "Paris-Amboise",
+      "options": [
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "3",
+      "note":"3"
+    },
+    {
+      "carpool": "Paris-Tours",
+      "options": [
+        "2",
+        "4",
+        "5"
+      ],
+      "answer": "4",
+      "note":"4"
+    }
+]
