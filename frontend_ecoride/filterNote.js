@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-//Choisir le niveau de difficulté
+//Choisir le niveau de note
 
 document.querySelectorAll(".note-btn").forEach((btn) => {
     btn.addEventListener("click", function() {
@@ -83,14 +83,14 @@ async function loadCarpools(note){
         const allCarpools = await response.json()
 
 //Filtrer les questions par diff
-        carpools = allCarpools.filter((c) => c.note === note)
-        selectedNote = note
-        currentCarpoolIndex = 0
+       carpools = allCarpools.filter((c) => c.note === note)
+       selectedNote = note
+       currentCarpoolIndex = 0
 
-      / startFilterNote()
+      startFilterNote()
     }
     catch (error) {
-        console.error("Erreur lors du chargement des questions", error)
+        console.error("Erreur lors du chargement des carpools", error)
     }
 }
 
@@ -102,6 +102,7 @@ function startFilterNote() {
 }
 
 //Afficher la question actuelle
+
 function showCarpool() {
     if(currentCarpoolIndex < carpools.length) {
         const carpoolData = carpools[currentCarpoolIndex]

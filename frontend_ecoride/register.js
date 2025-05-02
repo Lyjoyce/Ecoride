@@ -3,11 +3,11 @@ async function registerUser(){
     const lastname= document.getElementById("lastname").value
     const email= document.getElementById("email").value
     const password= document.getElementById("password").value
-    const password2= document.getElementById("password2").value
+    c
 
     const url = "http://www.localhost:8081/api/v1/actor/addNewActor"
 
-    if(firstname&&lastname&&email&&password&&password2){
+    if(firstname&&lastname&&email&&password){
 
         try{
             const userData = {
@@ -15,7 +15,6 @@ async function registerUser(){
                 lastname : lastname,
                 email : email,
                 password : password,
-                password2 : password2
             }
 
             const response = await fetch(url, {
