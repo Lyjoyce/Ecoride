@@ -13,7 +13,7 @@ let selectedEnergy = ""
 //Chargement des carpoolings en fonction du filtre
 async function loadCarpoolings(energy){
     try{
-        const response = await fetch ("/frontend_ecoride/energyFilter.json")
+        const response = await fetch ("/frontend_ecoride/filterEnergy.json")
 
         if (!response.ok){
             throw new Error(`Erreur HTTP: ${response.status}`)
