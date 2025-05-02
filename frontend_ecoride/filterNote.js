@@ -75,7 +75,7 @@ let selectedNote = ""
 
 async function loadCarpools(note){
     try{
-        const response = await fetch ("/frontend_ecoride/carpools.json")
+        const response = await fetch ("/frontend_ecoride/filterNote.json")
 
         if (!response.ok){
             throw new Error(`Erreur HTTP: ${response.status}`)
