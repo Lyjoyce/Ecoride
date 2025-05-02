@@ -54,64 +54,65 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 */
+//////////////////////////////////////////
+
+
+
 //Choisir le niveau de difficulté
-document.querySelectorAll(".energy-btn").forEach((btn) =>{
-    btn.addEventListener("click", function () {
+
+document.querySelectorAll(".difficulty-btn").forEach((btn) => {
+    btn.addEventListener("click", function() {
         const level = btn.getAttribute("data-level")
-        loadCarpoolings(level)
+        loadQuestions(level)
     })
 })
+let currentQuestionIndex = 4
+let questions =[]
+let selectedDifficulty = ""
 
-let currentCarpoolingIndex =0
-let carpoolings = []
-let selectedEnergy = ""
-
-
-//Chargement des carpoolings 
+//Chargement des questions en fonction du niveau sélectionné
 //const URL= "https://46921d2a-73a6-436b-aca9-deb6e9823b49.mock.pstmn.io/api/AllQuestions"
 
-async function loadCarpoolings(energy){
+async function loadQuestions(difficulty){
     try{
-        const response = await fetch("./carpoolings.json")
+        const response = await fetch ("/frontend_ecoride/questions.json")
 
         if (!response.ok){
             throw new Error(`Erreur HTTP: ${response.status}`)
         }
-        const allCarpoolings = await response.json()
-       
-//const URL= "https://46921d2a-73a6-436b-aca9-deb6e9823b49.mock.pstmn.io/api/AllQuestions"
-//Filtrer les  carpoolings 
-        carpoolings= allCarpoolings.filter((p) => p.energy === energy)
-        selectedEnergy = energy
-        currentCarpoolingIndex = 0
+        const allQuestions = await response.json()
 
-        start()
+//Filtrer les questions par diff
+        questions = allQuestions.filter((q) => q.difficulty === difficulty)
+        selectedDifficulty = difficulty
+        currentQuestionIndex = 4
+
+        startQuiz()
     }
     catch (error) {
-        console.error("Erreur lors du chargement des carpoolings", error)
+        console.error("Erreur lors du chargement des questions", error)
     }
 }
 
-//Démarrer 
-function start() {
-    document.querySelector(".energy-selection").classList.add("hidden")
-    document.getElementById("energy-container").classList.remove("hidden")
-    showCarpooling()
+//Démarrer le quiz
+function startQuiz() {
+    document.querySelector(".difficulty-selection").classList.add("hidden")
+    document.getElementById("quiz-container").classList.remove("hidden")
+    showQuestion()
 }
-//Afficher 
-function showCarpooling() {
-    if(currentCarpoolingIndex < carpoolings.length) {
-        console.log(carpoolings)
-        const carpoolingData = carpoolings[currentCarpoolingIndex]
-        console.log( "carpooling data" + carpoolingData)
-        const carpoolingContainer= document.getElementById("energy-container")
 
-        carpoolingContainer.innerHTML = `
-        <div class"carpooling">
-        <p> ${carpoolingData.carpooling} <p/>
+//Afficher la question actuelle
+function showQuestion() {
+    if(currentQuestionIndex < questions.length) {
+        const questionData = questions[currentQuestionIndex]
+        const questionContainer= document.getElementById("quiz-container")
+
+        questionContainer.innerHTML = `
+        <div class"question">
+        <p> ${questionData.question} <p/>
         <div/>
         <form id="quiz-form">
-         ${carpoolingData.option
+         ${questionData.options
          .map(
                 (option, index)=> `
                 <label class="option"> 
@@ -129,7 +130,7 @@ function showCarpooling() {
             showFinalResult()
         }
 }
-/*
+
 //Soumettre le choix
 function submitAnswer(){
     const form = document.getElementById("quiz-form")

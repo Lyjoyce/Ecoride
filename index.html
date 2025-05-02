@@ -31,8 +31,8 @@
                         <img src="/frontend_ecoride/icons/icon_menu.png" class="icon_menu" alt="icon_menu">
                     </button>
                     <div class="dropdown-content">
-                        <a href="details.html">covoiturages</a>
-                        <a href="contact.html">contact</a>
+                        <a href="/frontend_ecoride/details.html">covoiturages</a>
+                        <a href="/frontend_ecoride/">contact</a>
                         <a href="/frontend_ecoride/login.html">connection</a>
                         <a href="/frontend_ecoride/login.html">déconnection</a>
                     </div>
@@ -47,7 +47,7 @@
             </nav>
         </div>
     </header>
-
+ <!--
     <main>
         <div>
             <div class="presentation_ecoride">
@@ -91,7 +91,7 @@
                         <div class="dropdown">
                             <div class="dest-btn ">
                                 Centre-Val de Loire
-                                    <a href="details-centre.html" class="ablack search">détails</a>
+                                    <a href="/frontend_ecoride/details.html" class="ablack search">détails</a>
                             </div>
                             <div class="dropdown-content">
                                 <a href="pariscentre.html">Paris- Centre-Val de Loire</a>
@@ -145,6 +145,17 @@
                         </div>
 
                     </div>
+                </div>
+                <div class="container">
+                    <h1>Quiz interactif</h1>
+                    <div class="difficulty-selection">
+                        <h2>Choisissez le niveau de difficulté :</h2>
+                        <button class="difficulty-btn" data-level="facile">facile</button>
+                        <button class="difficulty-btn" data-level="moyen">moyen</button>
+                        <button class="difficulty-btn" data-level="difficile">difficile</button>
+                    </div>
+
+                    <div id="quiz-container" class="hidden"></div>
                 </div>
 <!--
                  <input type="datetime-local">
