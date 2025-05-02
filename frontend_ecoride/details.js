@@ -60,20 +60,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
 //Choisir le niveau de difficulté
 
-document.querySelectorAll(".difficulty-btn").forEach((btn) => {
+document.querySelectorAll(".note-btn").forEach((btn) => {
     btn.addEventListener("click", function() {
         const level = btn.getAttribute("data-level")
         loadQuestions(level)
     })
 })
-let currentQuestionIndex = 4
+let currentQuestionIndex = 0
 let questions =[]
-let selectedDifficulty = ""
+let selectedNote = ""
 
 //Chargement des questions en fonction du niveau sélectionné
 //const URL= "https://46921d2a-73a6-436b-aca9-deb6e9823b49.mock.pstmn.io/api/AllQuestions"
 
-async function loadQuestions(difficulty){
+async function loadQuestions(note){
     try{
         const response = await fetch ("/frontend_ecoride/questions.json")
 
@@ -83,11 +83,11 @@ async function loadQuestions(difficulty){
         const allQuestions = await response.json()
 
 //Filtrer les questions par diff
-        questions = allQuestions.filter((q) => q.difficulty === difficulty)
-        selectedDifficulty = difficulty
-        currentQuestionIndex = 4
+        questions = allQuestions.filter((q) => q.note === note)
+        selectedNote = note
+        currentQuestionIndex = 0
 
-        startQuiz()
+      / startQuiz()
     }
     catch (error) {
         console.error("Erreur lors du chargement des questions", error)
@@ -96,8 +96,8 @@ async function loadQuestions(difficulty){
 
 //Démarrer le quiz
 function startQuiz() {
-    document.querySelector(".difficulty-selection").classList.add("hidden")
-    document.getElementById("quiz-container").classList.remove("hidden")
+    document.querySelector(".note-selection").classList.add("hidden")
+    document.getElementById("filter-container").classList.remove("hidden")
     showQuestion()
 }
 
@@ -105,13 +105,13 @@ function startQuiz() {
 function showQuestion() {
     if(currentQuestionIndex < questions.length) {
         const questionData = questions[currentQuestionIndex]
-        const questionContainer= document.getElementById("quiz-container")
+        const questionContainer= document.getElementById("filter-container")
 
         questionContainer.innerHTML = `
         <div class"question">
         <p> ${questionData.question} <p/>
         <div/>
-        <form id="quiz-form">
+        <form id="filter-form">
          ${questionData.options
          .map(
                 (option, index)=> `
@@ -133,7 +133,7 @@ function showQuestion() {
 
 //Soumettre le choix
 function submitAnswer(){
-    const form = document.getElementById("quiz-form")
+    const form = document.getElementById("filter-form")
     const selectAnswer = form.answer.value
 
     if (!selectAnswer){
@@ -163,8 +163,8 @@ function incrementScore() {
 }
 //Afficher le résultat final
 function showFinalResult() {
-    const quizContainer = document.getElementById("quiz-container")
-    quizContainer.innerHTML = `
+    const filterContainer = document.getElementById("filter-container")
+    filterContainer.innerHTML = `
     <div id="result">
     <p>Votre score final est de ${score} sur ${questions.length}.</p>
     </div>
@@ -178,7 +178,7 @@ function submitQuiz() {
         })
     })
 }
-
+/*
 function calculateScore(callback){
     const correctAnswers ={
         q1:"Paris",
@@ -195,12 +195,12 @@ function calculateScore(callback){
     }
     callback(score)
 }
-//une fonction qui a la responsabilité d'afficher un mss en f° du score*/
-/**
- * 
- * @param {*int} score 
- */
+//une fonction qui a la responsabilité d'afficher un mss en f° du score
 
+  /*
+  @param {*int} score 
+ */
+/*
 function handleMessage(score){
     const resultDIV = document.getElementById("result")
 
@@ -219,3 +219,5 @@ function handleMessage(score){
 }
 //COOKIE
 document.cookie = "username=zaz; expires=Fri, 01 aout 2025 12:00:00 UTC";
+
+*/
